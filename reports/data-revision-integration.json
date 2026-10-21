@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checks": {
+    "release_verifies_after_training": true,
+    "smoke_completed_one_epoch": true,
+    "smoke_bound_to_reviewed_manifest": true,
+    "training_used_separate_working_copy": true,
+    "framework_cache_isolated": true,
+    "active_pt_unchanged": true,
+    "active_onnx_unchanged": true,
+    "review_bound_to_inventory": true,
+    "accepted_source_files_unchanged": true,
+    "colab_package_relocation_passed": true,
+    "package_contains_attribution": true,
+    "incompatible_pilot_rejected_by_ppe_service": true
+  },
+  "release_summary": {
+    "class_instances": {
+      "train": {
+        "no_helmet": 25,
+        "person": 27,
+        "helmet": 2
+      },
+      "val": {
+        "helmet": 5,
+        "person": 7,
+        "no_helmet": 2
+      }
+    },
+    "scene_groups": {
+      "train": [
+        "fence-plan-reader",
+        "scaffold-carpark",
+        "scaffold-paved-tour",
+        "scaffold-single-worker",
+        "tower-earthworks",
+        "tower-visit"
+      ],
+      "val": [
+        "pole-valley",
+        "rebar-slab-tour"
+      ]
+    },
+    "images": {
+      "train": 6,
+      "val": 2
+    },
+    "review_decisions": {
+      "exclude": 40,
+      "accept": 8
+    }
+  },
+  "smoke": {
+    "epochs": 1,
+    "imgsz": 320,
+    "device": "cpu",
+    "weights_sha256": "bbb0b80487a96884312cdb81e2cb763b1f31d4587eb084ad4b7bf308488b3646",
+    "run": "runs/train/helmet-pilot-v1-isolated-smoke"
+  },
+  "package_sha256": "01808ac11801b9370863c7ecc386f0a138c9681d9321c61127aa543214babf8e",
+  "manifest_sha256": "1bfa168436dbccdd571fcde27b2910a9c4b066e49388a7e40f35f5bb8735a30f",
+  "relocation_errors": [],
+  "scope": "Pipeline integration only; no model improvement, independent human QA, held-out test or deployment accuracy claim"
+}

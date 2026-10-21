@@ -1,0 +1,97 @@
+{
+  "source_images": 5000,
+  "source_annotations": 5000,
+  "valid_images": 4995,
+  "quarantined_images": 5,
+  "class_counts_valid_only": {
+    "helmet": 19227,
+    "head_with_helmet": 16024,
+    "head": 6115,
+    "person_with_helmet": 14753,
+    "face": 14118,
+    "person_no_helmet": 5245
+  },
+  "inventory_sha256": "b01c7a8c810306fb5671de1d7088852a33b499ccedfee4a59882e23f15452af8",
+  "errors": [
+    {
+      "image": "9rcv8mm682-4/Safety Helmet Wearing Dataset/Images/hard_hat_workers1016.png",
+      "error": "Unmapped source class: person"
+    },
+    {
+      "image": "9rcv8mm682-4/Safety Helmet Wearing Dataset/Images/hard_hat_workers1303.png",
+      "error": "Unmapped source class: person"
+    },
+    {
+      "image": "9rcv8mm682-4/Safety Helmet Wearing Dataset/Images/hard_hat_workers1571.png",
+      "error": "Unmapped source class: person"
+    },
+    {
+      "image": "9rcv8mm682-4/Safety Helmet Wearing Dataset/Images/hard_hat_workers1595.png",
+      "error": "Unmapped source class: person"
+    },
+    {
+      "image": "9rcv8mm682-4/Safety Helmet Wearing Dataset/Images/hard_hat_workers380.png",
+      "error": "Unmapped source class: person"
+    }
+  ],
+  "mapping": {
+    "helmet": "helmet",
+    "head": "no_helmet",
+    "person_with_helmet": "person",
+    "person_no_helmet": "person",
+    "head_with_helmet": null,
+    "face": null
+  },
+  "orphaned_annotations": [],
+  "sample_ids": [
+    "hard_hat_workers1038",
+    "hard_hat_workers1180",
+    "hard_hat_workers1189",
+    "hard_hat_workers1217",
+    "hard_hat_workers1227",
+    "hard_hat_workers1317",
+    "hard_hat_workers1384",
+    "hard_hat_workers1602",
+    "hard_hat_workers1698",
+    "hard_hat_workers1729",
+    "hard_hat_workers1735",
+    "hard_hat_workers1751",
+    "hard_hat_workers1782",
+    "hard_hat_workers1843",
+    "hard_hat_workers2092",
+    "hard_hat_workers2235",
+    "hard_hat_workers2272",
+    "hard_hat_workers2412",
+    "hard_hat_workers252",
+    "hard_hat_workers2670",
+    "hard_hat_workers2692",
+    "hard_hat_workers2708",
+    "hard_hat_workers2725",
+    "hard_hat_workers2795",
+    "hard_hat_workers2835",
+    "hard_hat_workers2888",
+    "hard_hat_workers307",
+    "hard_hat_workers3157",
+    "hard_hat_workers3196",
+    "hard_hat_workers3213",
+    "hard_hat_workers3575",
+    "hard_hat_workers3655",
+    "hard_hat_workers367",
+    "hard_hat_workers3683",
+    "hard_hat_workers3711",
+    "hard_hat_workers382",
+    "hard_hat_workers3983",
+    "hard_hat_workers3984",
+    "hard_hat_workers4028",
+    "hard_hat_workers4336",
+    "hard_hat_workers4357",
+    "hard_hat_workers4361",
+    "hard_hat_workers4506",
+    "hard_hat_workers4588",
+    "hard_hat_workers4978",
+    "hard_hat_workers555",
+    "hard_hat_workers871",
+    "hard_hat_workers916"
+  ],
+  "ready_for_training": false
+}

@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "checks": {
+    "release_verifies_after_training": true,
+    "smoke_completed_one_epoch": true,
+    "smoke_bound_to_reviewed_manifest": true,
+    "training_used_separate_working_copy": true,
+    "framework_cache_isolated": true,
+    "active_pt_unchanged": true,
+    "active_onnx_unchanged": true,
+    "review_bound_to_inventory": true,
+    "accepted_source_files_unchanged": true,
+    "colab_package_relocation_passed": true,
+    "package_contains_attribution": true,
+    "incompatible_pilot_rejected_by_ppe_service": true
+  },
+  "release_summary": {
+    "class_instances": {
+      "train": {
+        "no_helmet": 38,
+        "person": 83,
+        "helmet": 46
+      },
+      "val": {
+        "no_helmet": 9,
+        "person": 20,
+        "helmet": 11
+      }
+    },
+    "scene_groups": {
+      "train": [
+        "brick-interior-helmets",
+        "construction-hoist",
+        "crane-maintenance",
+        "drilling-rig-team",
+        "earthmoving-truck",
+        "earthworks-mixed-team",
+        "fence-plan-reader",
+        "highrise-perimeter",
+        "red-structure-inspection",
+        "road-tunnel-work",
+        "rolling-mill-work",
+        "scaffold-carpark",
+        "scaffold-paved-tour",
+        "scaffold-single-worker",
+        "site-entrance-tour",
+        "snow-outdoor-work",
+        "timber-interior-review",
+        "tower-earthworks",
+        "underground-mine-work",
+        "unfinished-block-tour",
+        "unfinished-brick-room",
+        "utility-work"
+      ],
+      "val": [
+        "foundry-pour",
+        "night-rail-work",
+        "rebar-slab-tour",
+        "site-plan-reader",
+        "tower-visit"
+      ]
+    },
+    "images": {
+      "train": 35,
+      "val": 8
+    },
+    "unique_sources": {
+      "train": 26,
+      "val": 6
+    },
+    "sample_roles": {
+      "train": {
+        "positive": 26,
+        "background_negative": 9
+      },
+      "val": {
+        "positive": 6,
+        "background_negative": 2
+      }
+    },
+    "review_decisions": {
+      "exclude": 112,
+      "accept": 43
+    }
+  },
+  "smoke": {
+    "epochs": 1,
+    "imgsz": 320,
+    "device": "cpu",
+    "weights_sha256": "1b9fc82b1473c2e076526df1c35e9bb702a8640073797d3e8c8425d3d5bbd378",
+    "run": "runs/train/helmet-pilot-v3-smoke"
+  },
+  "package_sha256": "ff6cefc9909cb7146d7df55db76c5657f8d85a475c406e59e0bdeed0bbab10ee",
+  "manifest_sha256": "7f596abccdd5ffc5b61b98e06815401a22df94f803dbbb4b4ca53871c720aee4",
+  "relocation_errors": [],
+  "scope": "Pipeline integration only; no model improvement, independent human QA, held-out test or deployment accuracy claim"
+}

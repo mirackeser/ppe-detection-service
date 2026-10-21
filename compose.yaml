@@ -1,0 +1,15 @@
+services:
+  ppe:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      PPE_MODEL_PATH: /app/models/best.pt
+      PPE_DEVICE: cpu
+    volumes:
+      - ./models:/app/models:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=2)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

@@ -1,0 +1,66 @@
+{
+  "source": "SHEL5K v4",
+  "release_manifest_sha256": "a3b03f31ae937d4f1e8c53f1fed26a94a60f0094694ff1f9537fe3273c9d0b90",
+  "candidate_count": 72,
+  "newly_accepted_images": 19,
+  "total_accepted_images": 27,
+  "class_instances": {
+    "train": {
+      "no_helmet": 38,
+      "person": 74,
+      "helmet": 37
+    },
+    "val": {
+      "no_helmet": 9,
+      "person": 18,
+      "helmet": 9
+    }
+  },
+  "coverage": {
+    "train": {
+      "images": 22,
+      "groups": 18,
+      "tags": {
+        "initial_pilot": 5,
+        "helmet_only": 10,
+        "elevated_work": 3,
+        "utility": 3,
+        "daylight": 7,
+        "single_worker": 1,
+        "low_light": 4,
+        "foundry": 1,
+        "mine": 3,
+        "snow": 1,
+        "outdoor_workers": 1,
+        "site_visit": 4,
+        "mixed": 3,
+        "earthworks": 2,
+        "indoor": 2,
+        "timber_frame": 1,
+        "loose_helmet": 1,
+        "vehicle_maintenance": 1,
+        "head_only": 4
+      }
+    },
+    "val": {
+      "images": 5,
+      "groups": 5,
+      "tags": {
+        "initial_pilot": 2,
+        "helmet_only": 1,
+        "indoor": 1,
+        "multiple_people": 1,
+        "mixed": 2,
+        "daylight": 2,
+        "hoist": 1,
+        "drilling": 1
+      }
+    }
+  },
+  "limitations": [
+    "Assistant visual review; no independent human adjudication.",
+    "Tags describe visible context, not required PPE or violation ground truth.",
+    "No vest/background-negative supervision or final held-out test.",
+    "Small reviewed cohort: substantive_training_ready=false."
+  ]
+}

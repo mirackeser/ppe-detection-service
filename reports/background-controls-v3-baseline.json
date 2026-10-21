@@ -1,0 +1,2254 @@
+{
+  "utc_time": "2026-10-21T12:59:06.874489+00:00",
+  "evaluation_completed": true,
+  "protocol_version": "background-controls-v1",
+  "data_yaml_sha256": "2f04ad325eed36ead7c541d9e3eec8b5f1a20cfdb7307997cef31e2f32fd5c1d",
+  "validation_fingerprint": "e05c9373841a3b49cd1c3d18476081e8b51ff7ac03966eb26f069632125c13c2",
+  "cohort_lock_checked": true,
+  "positive_output_sanity_passed": true,
+  "positive_images_with_detections": 32,
+  "positive_images": 32,
+  "manifest_sha256": "7f596abccdd5ffc5b61b98e06815401a22df94f803dbbb4b4ca53871c720aee4",
+  "review_sha256": "7511ac7dc9fd4984ebd98fd74087d56614d291bb2555faee9831c1cce4149794",
+  "model": "best.pt",
+  "model_sha256": "22215ea200547e70d5d646e4f4a78e0339ee8f058fda85731a86cecbeea5399a",
+  "runtime": "pytorch",
+  "imgsz": 640,
+  "confidence": 0.25,
+  "target_classes": [
+    "helmet",
+    "no_helmet",
+    "person"
+  ],
+  "by_split": {
+    "train": {
+      "negative_images": 9,
+      "source_groups": 9,
+      "images_with_false_detection": 0,
+      "image_fraction_with_false_detection": 0.0,
+      "groups_with_false_detection": 0,
+      "group_fraction_with_false_detection": 0.0,
+      "false_detection_boxes": 0,
+      "predicted_classes": {},
+      "single_frame_missing_candidates": 0
+    },
+    "val": {
+      "negative_images": 2,
+      "source_groups": 2,
+      "images_with_false_detection": 1,
+      "image_fraction_with_false_detection": 0.5,
+      "groups_with_false_detection": 1,
+      "group_fraction_with_false_detection": 0.5,
+      "false_detection_boxes": 1,
+      "predicted_classes": {
+        "person": 1
+      },
+      "single_frame_missing_candidates": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "hard_hat_workers1227",
+      "source_id": "hard_hat_workers1227",
+      "scene_id": "scaffold-single-worker",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "f7be77767e4e8b5d32af7077454f39c4228647be971feebe2f7167b2019b80a8",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.3890976309776306,
+          "box": [
+            325.7568664550781,
+            163.86526489257812,
+            378.9541931152344,
+            239.07073974609375
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1384",
+      "source_id": "hard_hat_workers1384",
+      "scene_id": "utility-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "b486063db5690ba1b0fe6fde572d1bf559821bfc001c7fcfc448b39a71fa3170",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.34538155794143677,
+          "box": [
+            193.2462615966797,
+            129.91481018066406,
+            211.13844299316406,
+            147.06834411621094
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3340877592563629,
+          "box": [
+            185.7169952392578,
+            123.46941375732422,
+            229.2373504638672,
+            214.8465576171875
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3205614686012268,
+          "box": [
+            213.79049682617188,
+            112.12189483642578,
+            262.1980285644531,
+            216.96890258789062
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1729",
+      "source_id": "hard_hat_workers1729",
+      "scene_id": "tower-visit",
+      "split": "val",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "041857225c23200f15761310a3d7e05e2a088b7e59c9067180697834ddc987b3",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.7268784642219543,
+          "box": [
+            0.0,
+            46.887210845947266,
+            75.085693359375,
+            190.0633544921875
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7229016423225403,
+          "box": [
+            67.1962890625,
+            48.073631286621094,
+            141.73483276367188,
+            188.3382568359375
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6856850385665894,
+          "box": [
+            206.40530395507812,
+            57.907814025878906,
+            265.0976257324219,
+            177.15670776367188
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6765990257263184,
+          "box": [
+            266.2510986328125,
+            65.83682250976562,
+            325.6701354980469,
+            172.1922149658203
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6658744812011719,
+          "box": [
+            134.60296630859375,
+            57.157562255859375,
+            211.86155700683594,
+            182.42904663085938
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6024464964866638,
+          "box": [
+            320.898681640625,
+            74.82939910888672,
+            369.9719543457031,
+            169.95396423339844
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.3960478603839874,
+          "box": [
+            222.67855834960938,
+            61.72411346435547,
+            253.72695922851562,
+            77.08123779296875
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.3447316586971283,
+          "box": [
+            223.5865936279297,
+            57.94411087036133,
+            255.0518341064453,
+            73.87995910644531
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.324697345495224,
+          "box": [
+            291.7049865722656,
+            68.19634246826172,
+            321.85491943359375,
+            84.73179626464844
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.3246169984340668,
+          "box": [
+            293.1410827636719,
+            69.77606964111328,
+            317.66455078125,
+            80.06481170654297
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.3170992434024811,
+          "box": [
+            292.3459167480469,
+            74.08123016357422,
+            318.6063232421875,
+            83.85541534423828
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.31245291233062744,
+          "box": [
+            156.76707458496094,
+            56.19425582885742,
+            190.54049682617188,
+            73.75316619873047
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.30865511298179626,
+          "box": [
+            291.20843505859375,
+            72.40079498291016,
+            321.0221252441406,
+            88.24408721923828
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.30246058106422424,
+          "box": [
+            85.92135620117188,
+            51.99890899658203,
+            116.84257507324219,
+            64.46366882324219
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.2945575714111328,
+          "box": [
+            183.14111328125,
+            74.0197525024414,
+            207.72573852539062,
+            88.12745666503906
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.28771016001701355,
+          "box": [
+            88.16539001464844,
+            51.173545837402344,
+            117.01525115966797,
+            61.361976623535156
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.2871769368648529,
+          "box": [
+            335.1131591796875,
+            78.30646514892578,
+            362.2772521972656,
+            93.50879669189453
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.2855038046836853,
+          "box": [
+            221.77113342285156,
+            66.38760375976562,
+            253.08265686035156,
+            80.67090606689453
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.2725932002067566,
+          "box": [
+            185.75286865234375,
+            69.42942810058594,
+            207.1721954345703,
+            83.41131591796875
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.25609421730041504,
+          "box": [
+            156.2471160888672,
+            60.760765075683594,
+            190.67926025390625,
+            79.08796691894531
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 5
+    },
+    {
+      "id": "hard_hat_workers2235",
+      "source_id": "hard_hat_workers2235",
+      "scene_id": "tower-earthworks",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "bb30cbfe6d47a40b555467089c5f9861130f7591096373c3edb0331be81e962d",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.66790771484375,
+          "box": [
+            106.62039184570312,
+            43.494049072265625,
+            165.586669921875,
+            129.21664428710938
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5658037662506104,
+          "box": [
+            193.67111206054688,
+            47.70800018310547,
+            242.1423797607422,
+            127.63379669189453
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5216270685195923,
+          "box": [
+            310.12982177734375,
+            57.80474853515625,
+            365.23858642578125,
+            145.7476348876953
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5065549612045288,
+          "box": [
+            265.8374328613281,
+            48.048885345458984,
+            304.574951171875,
+            138.36497497558594
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4831797182559967,
+          "box": [
+            244.04214477539062,
+            47.34883499145508,
+            278.0101318359375,
+            126.35358428955078
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.3685847222805023,
+          "box": [
+            275.1504211425781,
+            49.172828674316406,
+            300.227783203125,
+            63.412353515625
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3601400554180145,
+          "box": [
+            298.57568359375,
+            54.40927505493164,
+            324.73828125,
+            124.98580169677734
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.3165030777454376,
+          "box": [
+            207.87081909179688,
+            51.37497329711914,
+            229.31082153320312,
+            65.142578125
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2958907186985016,
+          "box": [
+            114.36566162109375,
+            49.445159912109375,
+            160.67791748046875,
+            121.58991241455078
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 2
+    },
+    {
+      "id": "hard_hat_workers3196",
+      "source_id": "hard_hat_workers3196",
+      "scene_id": "scaffold-paved-tour",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "d7c1b43b8d5ba161f90d9ba513f32a084a3f0d19cc4c0785fd018154f8d82909",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.7084463238716125,
+          "box": [
+            92.74468994140625,
+            53.24932098388672,
+            184.6344757080078,
+            199.7412872314453
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6660671234130859,
+          "box": [
+            267.4874267578125,
+            57.841251373291016,
+            330.56085205078125,
+            194.1066131591797
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6540334820747375,
+          "box": [
+            210.57952880859375,
+            63.40414047241211,
+            268.2190246582031,
+            198.12278747558594
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5191413760185242,
+          "box": [
+            171.0780029296875,
+            62.69326400756836,
+            213.7583770751953,
+            193.83065795898438
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.5121981501579285,
+          "box": [
+            218.73004150390625,
+            59.948490142822266,
+            250.1232452392578,
+            82.12442779541016
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers3683",
+      "source_id": "hard_hat_workers3683",
+      "scene_id": "rebar-slab-tour",
+      "split": "val",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "921b4e163b91ea8823de3cc61eaecf556d9b27956f8c41adf6bf119bd7651cb6",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.759768545627594,
+          "box": [
+            335.5783386230469,
+            31.7781982421875,
+            415.4855651855469,
+            157.18206787109375
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7494447827339172,
+          "box": [
+            254.2395782470703,
+            42.503082275390625,
+            334.26348876953125,
+            158.63473510742188
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7233520746231079,
+          "box": [
+            24.798933029174805,
+            51.026145935058594,
+            115.15673828125,
+            157.41543579101562
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.686566174030304,
+          "box": [
+            167.75767517089844,
+            50.69244384765625,
+            242.01597595214844,
+            159.5939178466797
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.678792417049408,
+          "box": [
+            113.43900299072266,
+            50.907318115234375,
+            177.3601837158203,
+            156.13841247558594
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.3649308979511261,
+          "box": [
+            356.0888977050781,
+            13.346924781799316,
+            395.474853515625,
+            38.458499908447266
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers382",
+      "source_id": "hard_hat_workers382",
+      "scene_id": "scaffold-carpark",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "fcf1c8eb4c224b6a546a74f3305f101ac16f9c6adb69bf7f3e644a87d1ec8ac6",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.6590946912765503,
+          "box": [
+            111.79813385009766,
+            59.22567367553711,
+            183.54452514648438,
+            156.67478942871094
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.644586443901062,
+          "box": [
+            296.9397888183594,
+            51.29292678833008,
+            368.19976806640625,
+            155.7493896484375
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6257702112197876,
+          "box": [
+            53.44179153442383,
+            55.18260192871094,
+            125.81002807617188,
+            156.04417419433594
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5773475170135498,
+          "box": [
+            231.10147094726562,
+            43.38465881347656,
+            313.45989990234375,
+            155.3046875
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.43427157402038574,
+          "box": [
+            186.84963989257812,
+            56.49064254760742,
+            260.56610107421875,
+            155.04327392578125
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.2682841122150421,
+          "box": [
+            197.72744750976562,
+            56.357025146484375,
+            222.2222900390625,
+            69.54165649414062
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers4978",
+      "source_id": "hard_hat_workers4978",
+      "scene_id": "fence-plan-reader",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "f36a955c2acf2cf5e1061b3c1ae12d830d5e6987194f51317f34f9d7efe43e88",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.7083165049552917,
+          "box": [
+            240.7754669189453,
+            53.252925872802734,
+            288.0601806640625,
+            93.66705322265625
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6404395699501038,
+          "box": [
+            213.86141967773438,
+            43.32941436767578,
+            339.6172180175781,
+            228.20245361328125
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers4135",
+      "source_id": "hard_hat_workers4135",
+      "scene_id": "site-plan-reader",
+      "split": "val",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "89735102fe18302cfdf79494e909d5bbdf2e24550d41b1c7bdabd1ca39c240c3",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.8200769424438477,
+          "box": [
+            95.5,
+            11.722176551818848,
+            140.10060119628906,
+            48.5117073059082
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6587340235710144,
+          "box": [
+            80.97367095947266,
+            3.052471160888672,
+            173.41993713378906,
+            213.98460388183594
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers107",
+      "source_id": "hard_hat_workers107",
+      "scene_id": "foundry-pour",
+      "split": "val",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "bb6b4b464b232a3cc41bad947437927a1ef6ab0095f3fc05a5b819a98a4b6565",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.4720240831375122,
+          "box": [
+            117.49166107177734,
+            38.57636260986328,
+            190.71080017089844,
+            175.7867889404297
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers4686",
+      "source_id": "hard_hat_workers4686",
+      "scene_id": "underground-mine-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "a197093d8c1410512ff67a203747df7ffffecc8e74b72001532c041b84e497d2",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.8389935493469238,
+          "box": [
+            228.3136749267578,
+            16.061019897460938,
+            292.4144592285156,
+            72.67620086669922
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.8039137125015259,
+          "box": [
+            69.45138549804688,
+            21.478652954101562,
+            164.32101440429688,
+            94.65873718261719
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.32819217443466187,
+          "box": [
+            1.2387275695800781,
+            15.672483444213867,
+            211.2813720703125,
+            228.33071899414062
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2964974641799927,
+          "box": [
+            202.96099853515625,
+            13.322525024414062,
+            318.8879089355469,
+            228.04766845703125
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers3289",
+      "source_id": "hard_hat_workers3289",
+      "scene_id": "snow-outdoor-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "0650ab092c7bb8bf595df21a755f20fac8279d842dee06662cb140e6cec06831",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.7256549596786499,
+          "box": [
+            51.866737365722656,
+            53.971168518066406,
+            72.70281982421875,
+            74.79023742675781
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7163963913917542,
+          "box": [
+            110.6069564819336,
+            31.587547302246094,
+            141.31329345703125,
+            54.22465515136719
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6641260385513306,
+          "box": [
+            86.52774047851562,
+            25.801597595214844,
+            166.6074676513672,
+            134.08189392089844
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.52814120054245,
+          "box": [
+            34.26481628417969,
+            48.633949279785156,
+            84.36182403564453,
+            117.35810852050781
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2265",
+      "source_id": "hard_hat_workers2265",
+      "scene_id": "unfinished-block-tour",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "e694fdcae3ffe5424413a9f2ae8b2d6d37142285a5b2ffc28314752148271c3d",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.8705084919929504,
+          "box": [
+            294.2815246582031,
+            48.54851531982422,
+            337.34912109375,
+            77.71099090576172
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.8135244250297546,
+          "box": [
+            119.83136749267578,
+            37.19121551513672,
+            155.89218139648438,
+            63.12306213378906
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7373472452163696,
+          "box": [
+            93.80745697021484,
+            33.7429084777832,
+            181.24781799316406,
+            215.68081665039062
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7348620891571045,
+          "box": [
+            186.70632934570312,
+            40.333003997802734,
+            266.3305358886719,
+            221.3827362060547
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7305213212966919,
+          "box": [
+            266.1597595214844,
+            42.08688735961914,
+            362.1064758300781,
+            221.7808074951172
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.707237958908081,
+          "box": [
+            205.5708465576172,
+            45.89887237548828,
+            243.5602264404297,
+            72.59319305419922
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7068387269973755,
+          "box": [
+            17.828372955322266,
+            33.298892974853516,
+            64.84788513183594,
+            61.171592712402344
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6719995141029358,
+          "box": [
+            0.778875470161438,
+            28.206680297851562,
+            88.07080078125,
+            218.05784606933594
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers4362",
+      "source_id": "hard_hat_workers4362",
+      "scene_id": "underground-mine-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "427395105b7c3c4b47d9fba3b83b467e61cbc0202c5ac4115266cd48b1bf3238",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.5758341550827026,
+          "box": [
+            24.217449188232422,
+            30.80555534362793,
+            118.40094757080078,
+            194.68804931640625
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.4831458330154419,
+          "box": [
+            48.626243591308594,
+            36.062217712402344,
+            79.07029724121094,
+            58.60239791870117
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1362",
+      "source_id": "hard_hat_workers1362",
+      "scene_id": "brick-interior-helmets",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "ffedbe73a6bf5cd60a58a161016d46b0f0fe55862866966acc661558e798862b",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.7684135437011719,
+          "box": [
+            0.3337521553039551,
+            15.225186347961426,
+            116.39505767822266,
+            224.425048828125
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7175424098968506,
+          "box": [
+            54.345672607421875,
+            15.979327201843262,
+            103.67160034179688,
+            54.8306999206543
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.693705677986145,
+          "box": [
+            148.45387268066406,
+            17.292709350585938,
+            197.11355590820312,
+            51.0567741394043
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6788457036018372,
+          "box": [
+            126.66087341308594,
+            14.483848571777344,
+            206.62518310546875,
+            214.9975128173828
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5765966176986694,
+          "box": [
+            244.34059143066406,
+            40.97865295410156,
+            281.4203796386719,
+            196.0220184326172
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.552300751209259,
+          "box": [
+            197.27273559570312,
+            33.26506042480469,
+            233.98275756835938,
+            68.7026596069336
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.5464994311332703,
+          "box": [
+            310.18243408203125,
+            48.927066802978516,
+            336.9208679199219,
+            72.29822540283203
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.5104938745498657,
+          "box": [
+            285.1897277832031,
+            42.24122619628906,
+            307.3974914550781,
+            61.96015167236328
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4661295413970947,
+          "box": [
+            278.72625732421875,
+            45.40322494506836,
+            316.0523681640625,
+            194.73153686523438
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4574495255947113,
+          "box": [
+            301.5250549316406,
+            48.43144226074219,
+            352.6846008300781,
+            199.79248046875
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.42062047123908997,
+          "box": [
+            247.06088256835938,
+            41.309688568115234,
+            272.28631591796875,
+            61.76211929321289
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.39285027980804443,
+          "box": [
+            191.0848846435547,
+            33.56111145019531,
+            245.4788360595703,
+            221.4561004638672
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2787",
+      "source_id": "hard_hat_workers2787",
+      "scene_id": "utility-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "5135c750314b348eeb07ef4b0e4a0cdbb294f049b4c81912eb4a33ac175a32fa",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.7063835263252258,
+          "box": [
+            28.55623435974121,
+            23.7579345703125,
+            68.4527359008789,
+            52.30513000488281
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.690036952495575,
+          "box": [
+            80.02179718017578,
+            40.22671127319336,
+            133.22764587402344,
+            80.59786987304688
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.520811140537262,
+          "box": [
+            0.7608354091644287,
+            18.637929916381836,
+            94.95072937011719,
+            169.1142578125
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.47035789489746094,
+          "box": [
+            70.8497085571289,
+            37.51103591918945,
+            206.09375,
+            176.8292999267578
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1840",
+      "source_id": "hard_hat_workers1840",
+      "scene_id": "underground-mine-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "b8c1d0578225a41f7218e2a12677ffc920c934ffb84c27ad016fc9dd81ae0cb1",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.6875625252723694,
+          "box": [
+            27.907047271728516,
+            59.67561340332031,
+            83.36856842041016,
+            153.9653778076172
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6755077242851257,
+          "box": [
+            204.93394470214844,
+            58.0777587890625,
+            260.6183776855469,
+            154.1165313720703
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6721331477165222,
+          "box": [
+            118.77959442138672,
+            59.10076904296875,
+            166.95355224609375,
+            153.12620544433594
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6637817025184631,
+          "box": [
+            161.49325561523438,
+            61.92323684692383,
+            207.79953002929688,
+            154.65704345703125
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6352251172065735,
+          "box": [
+            78.60365295410156,
+            57.10631561279297,
+            124.06488800048828,
+            152.81204223632812
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4574090838432312,
+          "box": [
+            251.70419311523438,
+            72.48098754882812,
+            289.49664306640625,
+            152.6573028564453
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1902",
+      "source_id": "hard_hat_workers1902",
+      "scene_id": "utility-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "973207c46142c4380462b63bf2c50df76bcf6e326883e5733b70b7f1e4a55690",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.7755265235900879,
+          "box": [
+            181.69790649414062,
+            102.60736083984375,
+            232.77992248535156,
+            135.1797637939453
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7252335548400879,
+          "box": [
+            95.559814453125,
+            19.439170837402344,
+            128.96324157714844,
+            43.88516616821289
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7187986373901367,
+          "box": [
+            232.93283081054688,
+            103.90787506103516,
+            276.285888671875,
+            134.00306701660156
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7117910981178284,
+          "box": [
+            269.17352294921875,
+            15.241277694702148,
+            328.1184997558594,
+            54.484153747558594
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5814001560211182,
+          "box": [
+            166.34620666503906,
+            99.61174774169922,
+            242.65664672851562,
+            252.54249572753906
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.48124298453330994,
+          "box": [
+            227.1717071533203,
+            100.8414077758789,
+            304.34881591796875,
+            248.16958618164062
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.46391743421554565,
+          "box": [
+            327.3622741699219,
+            12.934857368469238,
+            416.0,
+            254.89981079101562
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.44783729314804077,
+          "box": [
+            251.3197784423828,
+            16.428627014160156,
+            342.1014099121094,
+            141.75807189941406
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4251596927642822,
+          "box": [
+            52.48629379272461,
+            16.953914642333984,
+            143.7389678955078,
+            129.19705200195312
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.3938773274421692,
+          "box": [
+            133.4812469482422,
+            77.31197357177734,
+            175.102294921875,
+            109.86187744140625
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3383943438529968,
+          "box": [
+            278.4093017578125,
+            19.26214027404785,
+            416.0,
+            252.98858642578125
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.33404049277305603,
+          "box": [
+            71.55316162109375,
+            68.88208770751953,
+            186.9414825439453,
+            248.35067749023438
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.27871185541152954,
+          "box": [
+            137.5155029296875,
+            78.39983367919922,
+            173.25486755371094,
+            101.83941650390625
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2526583671569824,
+          "box": [
+            68.00276947021484,
+            17.379981994628906,
+            140.287353515625,
+            110.26567077636719
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1945",
+      "source_id": "hard_hat_workers1945",
+      "scene_id": "earthworks-mixed-team",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "79e211e2972515b85372388d2f84c0fca6363310d3994da1d6eccb90da763cd0",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.752642035484314,
+          "box": [
+            159.30178833007812,
+            5.012794494628906,
+            208.61441040039062,
+            38.34589767456055
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7068367600440979,
+          "box": [
+            29.72026824951172,
+            25.45874786376953,
+            70.25376892089844,
+            58.737091064453125
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6880232691764832,
+          "box": [
+            9.121223449707031,
+            16.038970947265625,
+            105.0843734741211,
+            291.6598205566406
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6215444207191467,
+          "box": [
+            123.37380981445312,
+            0.0,
+            219.24163818359375,
+            306.50823974609375
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5553587079048157,
+          "box": [
+            208.65618896484375,
+            39.49493408203125,
+            283.7264709472656,
+            289.2691650390625
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2356",
+      "source_id": "hard_hat_workers2356",
+      "scene_id": "timber-interior-review",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "df9a421525ce81b749ab4064f8f2808fa255187904040a787f40eba202b30b78",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.7120689153671265,
+          "box": [
+            63.97686767578125,
+            6.400701522827148,
+            271.3861999511719,
+            226.6759490966797
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5684345364570618,
+          "box": [
+            16.591875076293945,
+            72.70613098144531,
+            149.8569793701172,
+            244.30120849609375
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.29368868470191956,
+          "box": [
+            107.56591796875,
+            18.51755714416504,
+            163.22630310058594,
+            58.35687255859375
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers168",
+      "source_id": "hard_hat_workers168",
+      "scene_id": "construction-hoist",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "e10d86789782e6c2a490953b9d0217d6ea1380c8d7a8a8c91f8e00aacca19062",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.7622247338294983,
+          "box": [
+            1.1871743202209473,
+            72.18450164794922,
+            149.7342071533203,
+            234.80316162109375
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7101308703422546,
+          "box": [
+            120.39013671875,
+            24.474437713623047,
+            254.42208862304688,
+            249.61521911621094
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.680027961730957,
+          "box": [
+            270.8753662109375,
+            72.86636352539062,
+            392.0295104980469,
+            225.48826599121094
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.34998753666877747,
+          "box": [
+            163.60362243652344,
+            16.154823303222656,
+            211.92822265625,
+            52.558349609375
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers4115",
+      "source_id": "hard_hat_workers4115",
+      "scene_id": "drilling-rig-team",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "d71993886aeae5c5b6ed4e2dafdeddadfc14f8b488d6ce5ef0bcd124dc3fab92",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.6877673864364624,
+          "box": [
+            39.975120544433594,
+            22.084020614624023,
+            88.55950164794922,
+            56.66767120361328
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6153266429901123,
+          "box": [
+            77.81885528564453,
+            10.527730941772461,
+            171.6317596435547,
+            229.94635009765625
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5361290574073792,
+          "box": [
+            25.069726943969727,
+            15.237464904785156,
+            94.83601379394531,
+            229.42872619628906
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2638",
+      "source_id": "hard_hat_workers2638",
+      "scene_id": "crane-maintenance",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "1d75461634099e80cc6154500a335f656992d603ee0f52b3f8b952b8bcdbad31",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.6346763372421265,
+          "box": [
+            7.917563438415527,
+            52.77544403076172,
+            91.03909301757812,
+            226.3597412109375
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6238912343978882,
+          "box": [
+            73.13294982910156,
+            49.1396598815918,
+            187.0569610595703,
+            234.2854766845703
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.564185619354248,
+          "box": [
+            187.52560424804688,
+            50.15031051635742,
+            315.1178283691406,
+            213.29127502441406
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.28032565116882324,
+          "box": [
+            121.92948150634766,
+            41.52925109863281,
+            186.82266235351562,
+            120.63996887207031
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2103",
+      "source_id": "hard_hat_workers2103",
+      "scene_id": "earthmoving-truck",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "50dd8bb601ec36019908a637561a54d62bda0e5a8009955427ad2c70a1656b22",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.4423319101333618,
+          "box": [
+            59.00904846191406,
+            30.88018798828125,
+            121.70368194580078,
+            197.70086669921875
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2701079547405243,
+          "box": [
+            112.36022186279297,
+            26.53887176513672,
+            190.44879150390625,
+            235.5082550048828
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers576",
+      "source_id": "hard_hat_workers576",
+      "scene_id": "unfinished-brick-room",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "247d6eb824cdf6dc379b559b43b983282217e446bb2f0b66fbf62aa27cd256f8",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.7871877551078796,
+          "box": [
+            229.41424560546875,
+            52.481929779052734,
+            367.60748291015625,
+            176.5770721435547
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.785302460193634,
+          "box": [
+            108.05741882324219,
+            62.14167404174805,
+            229.70347595214844,
+            185.7265625
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7732766270637512,
+          "box": [
+            10.029940605163574,
+            54.46546173095703,
+            130.05567932128906,
+            183.11155700683594
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.363300621509552,
+          "box": [
+            259.37469482421875,
+            58.093048095703125,
+            316.43463134765625,
+            91.36129760742188
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.35232314467430115,
+          "box": [
+            128.46328735351562,
+            65.41548919677734,
+            180.92941284179688,
+            99.41679382324219
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.3070603311061859,
+          "box": [
+            54.39263153076172,
+            55.60586166381836,
+            105.83260345458984,
+            83.39734649658203
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 3
+    },
+    {
+      "id": "hard_hat_workers1099",
+      "source_id": "hard_hat_workers1099",
+      "scene_id": "site-entrance-tour",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "330ed76c1bee467003f6eb8a63a197c789ab9f68f808b855742d0785e19def77",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.7725831270217896,
+          "box": [
+            217.561279296875,
+            53.59291458129883,
+            338.60015869140625,
+            238.8307647705078
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.7027660012245178,
+          "box": [
+            19.188465118408203,
+            67.2177734375,
+            137.4428253173828,
+            238.523193359375
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.693440854549408,
+          "box": [
+            114.7314453125,
+            55.34681701660156,
+            226.6110382080078,
+            242.947509765625
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.32746249437332153,
+          "box": [
+            68.25393676757812,
+            62.82241439819336,
+            131.12478637695312,
+            102.86188507080078
+          ]
+        },
+        {
+          "label": "no_helmet",
+          "confidence": 0.2504074275493622,
+          "box": [
+            129.545654296875,
+            58.62869644165039,
+            180.1895294189453,
+            86.14097595214844
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 2
+    },
+    {
+      "id": "hard_hat_workers2718",
+      "source_id": "hard_hat_workers2718",
+      "scene_id": "highrise-perimeter",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "normal",
+      "image_sha256": "d74e0e419e074a7912723f00baf66b46633d47c4c01386c31c823607e4b916d4",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.550847589969635,
+          "box": [
+            0.10276508331298828,
+            39.51237869262695,
+            64.99088287353516,
+            198.6179962158203
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4888565242290497,
+          "box": [
+            39.49140167236328,
+            42.11943435668945,
+            119.21271514892578,
+            195.95079040527344
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3169049918651581,
+          "box": [
+            0.0,
+            43.724178314208984,
+            94.14469146728516,
+            197.83531188964844
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2459",
+      "source_id": "hard_hat_workers2459",
+      "scene_id": "road-tunnel-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "ddb8141615dbca2b76e73e0f8e5035cdf004ef92e0f1612cccc1f7224b090bfc",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.5998064875602722,
+          "box": [
+            45.744354248046875,
+            26.891929626464844,
+            77.92471313476562,
+            51.41633605957031
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.4344850480556488,
+          "box": [
+            0.4582124352455139,
+            52.74458694458008,
+            42.21509552001953,
+            166.53616333007812
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3722791075706482,
+          "box": [
+            31.07411766052246,
+            31.383577346801758,
+            93.8613510131836,
+            180.86643981933594
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.29388323426246643,
+          "box": [
+            14.178646087646484,
+            56.893272399902344,
+            40.17656707763672,
+            78.08024597167969
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.28377118706703186,
+          "box": [
+            37.86314392089844,
+            52.52986526489258,
+            68.3856201171875,
+            86.8221435546875
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.25136256217956543,
+          "box": [
+            6.038778305053711,
+            43.94773483276367,
+            88.04701232910156,
+            179.8078155517578
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1419",
+      "source_id": "hard_hat_workers1419",
+      "scene_id": "foundry-pour",
+      "split": "val",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "43fade6d109d11b8398a5254efaafbf3828e9cc3ac07e04392378f79e1058cac",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.7974080443382263,
+          "box": [
+            62.17558670043945,
+            25.530324935913086,
+            113.28632354736328,
+            66.50592803955078
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.6003089547157288,
+          "box": [
+            33.63080978393555,
+            13.03944206237793,
+            145.0838623046875,
+            299.9225158691406
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2631",
+      "source_id": "hard_hat_workers2631",
+      "scene_id": "rolling-mill-work",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "ac7028b212e47cadf49a73d7f57c8a7a91c38aae1ce124fda560920820898e01",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.6753033995628357,
+          "box": [
+            280.0937194824219,
+            23.040287017822266,
+            364.98992919921875,
+            158.01388549804688
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.5200371742248535,
+          "box": [
+            306.2829895019531,
+            28.866260528564453,
+            333.285888671875,
+            50.80315399169922
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3179363012313843,
+          "box": [
+            30.63201332092285,
+            21.927692413330078,
+            66.60935974121094,
+            83.61520385742188
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2541910409927368,
+          "box": [
+            18.959653854370117,
+            25.34816551208496,
+            69.87254333496094,
+            91.9831314086914
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers187",
+      "source_id": "hard_hat_workers187",
+      "scene_id": "night-rail-work",
+      "split": "val",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "021f295cb53689340b609f0019fb3f5e1e9e87423f2cd468eaa26c8091d9dcb4",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.6552965044975281,
+          "box": [
+            210.76174926757812,
+            36.63445281982422,
+            295.1833801269531,
+            116.5278091430664
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3253231942653656,
+          "box": [
+            315.6369934082031,
+            35.69510269165039,
+            406.816650390625,
+            116.86686706542969
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1011",
+      "source_id": "hard_hat_workers1011",
+      "scene_id": "red-structure-inspection",
+      "split": "train",
+      "sample_role": "positive",
+      "lighting": "low_light",
+      "image_sha256": "7db04d8d3bfc5a5b031ea5a94e7335dba61e034299fd0390f2f25ee29e67af8b",
+      "target_detections": [
+        {
+          "label": "helmet",
+          "confidence": 0.7642747163772583,
+          "box": [
+            64.02171325683594,
+            26.258474349975586,
+            121.37016296386719,
+            66.04925537109375
+          ]
+        },
+        {
+          "label": "helmet",
+          "confidence": 0.7614524364471436,
+          "box": [
+            121.06105041503906,
+            47.840023040771484,
+            166.9280242919922,
+            85.11282348632812
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.5691195130348206,
+          "box": [
+            9.610166549682617,
+            19.156513214111328,
+            224.09434509277344,
+            199.65379333496094
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.3622626066207886,
+          "box": [
+            16.586238861083984,
+            19.22313690185547,
+            140.5095977783203,
+            197.5236053466797
+          ]
+        },
+        {
+          "label": "person",
+          "confidence": 0.2995125651359558,
+          "box": [
+            110.3848648071289,
+            40.23761749267578,
+            215.5349578857422,
+            197.34921264648438
+          ]
+        }
+      ],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1227-bg",
+      "source_id": "hard_hat_workers1227",
+      "scene_id": "scaffold-single-worker",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "226dbdcc1602b0dad5ab041a65f2a2c95e2a1e22dc7037c9a77d8374012c430b",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2235-bg",
+      "source_id": "hard_hat_workers2235",
+      "scene_id": "tower-earthworks",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "36a8964c9ffe6fd2b3ef35535138b1cc6456c96b4a2c44d34d5bafbecbdd5027",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers4135-bg",
+      "source_id": "hard_hat_workers4135",
+      "scene_id": "site-plan-reader",
+      "split": "val",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "fffc19af1ad7ea007d3fbb3a8eaed7f558cbe0dfcb8d38189355cc05f0e3275e",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers107-bg",
+      "source_id": "hard_hat_workers107",
+      "scene_id": "foundry-pour",
+      "split": "val",
+      "sample_role": "background_negative",
+      "lighting": "low_light",
+      "image_sha256": "6b2ce72dc7b9f2a1881f09840c4d1b9ffa494f0f1588fe142d2ac89fa3e0dc3d",
+      "target_detections": [
+        {
+          "label": "person",
+          "confidence": 0.6310688257217407,
+          "box": [
+            0.0,
+            0.0,
+            188.09962463378906,
+            249.3246612548828
+          ]
+        }
+      ],
+      "false_detection": true,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers4978-bg",
+      "source_id": "hard_hat_workers4978",
+      "scene_id": "fence-plan-reader",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "565c9f55bf85c55f06742bfc5a1f54c22156f687fb488cfcde9eed2c0524e906",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2638-bg",
+      "source_id": "hard_hat_workers2638",
+      "scene_id": "crane-maintenance",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "698949a45ace3abb1abbfd0192315f353a07e537df33ceb89a81a3ecc7a0c022",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers168-bg",
+      "source_id": "hard_hat_workers168",
+      "scene_id": "construction-hoist",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "cfe0d307f1ddb099f91a177a4bf84b3d43e65fcc354bca67b68b42c18e6db76a",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1902-bg",
+      "source_id": "hard_hat_workers1902",
+      "scene_id": "utility-work",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "c33e181eda86d708299ae07b1e2aa313e7039955c8f12247c91d3891406c8b01",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1362-bg",
+      "source_id": "hard_hat_workers1362",
+      "scene_id": "brick-interior-helmets",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "normal",
+      "image_sha256": "692f5895f363a1d32f5e0579aeaf58b7e4eda53f53bd8e73a4617737557e92df",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers1840-bg",
+      "source_id": "hard_hat_workers1840",
+      "scene_id": "underground-mine-work",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "low_light",
+      "image_sha256": "f7f0c25a35b88d5d038706027a7cce6fde676d3545fbaecbc71c734bda8e6f2f",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    },
+    {
+      "id": "hard_hat_workers2459-bg",
+      "source_id": "hard_hat_workers2459",
+      "scene_id": "road-tunnel-work",
+      "split": "train",
+      "sample_role": "background_negative",
+      "lighting": "low_light",
+      "image_sha256": "cf78b9ce1cddd7d0c8022d23bcae0abb9992b39efcd3aded130dfc3ab9e4ce0c",
+      "target_detections": [],
+      "false_detection": false,
+      "single_frame_missing_candidates": 0
+    }
+  ],
+  "single_frame_policy": {
+    "person_helmet_vest_confidence": 0.5,
+    "no_helmet_confidence": 0.25,
+    "policy_source_sha256": "d597e8b58a2eee6940773ae67e7115e7bb902c2b37aac01b202a0a6e39066711",
+    "scope": "Geometric single-frame candidates; no temporal event evaluation"
+  },
+  "scope": "Reviewed derived-background controls only; train results are diagnostics, validation is a small development cohort; no temporal alarms or general field accuracy",
+  "limitations": [
+    "Cropped controls inherit their original scene; sample count is not independent scene count.",
+    "No confidence interval or production false-alarm rate is inferred from this small cohort.",
+    "Zero control detections would not establish good recall; positive-output check is only a sanity check.",
+    "Some source images may overlap historical pretrained/baseline data; not an independent held-out benchmark."
+  ],
+  "cohort_lock_sha256": "5b30c0b0ddbbcff72e52e8f869d750e6e3fb32c6df36e6b4a5b671f6d718c830"
+}

@@ -1,0 +1,16 @@
+{
+  "policy_id": "data-readiness-v1",
+  "scope": "Project working targets for a first controlled portfolio training experiment; not a published standard or deployment certification",
+  "minimum_positive_scene_groups": {"train": 40, "val": 10},
+  "minimum_class_instances": {
+    "train": {"helmet": 100, "no_helmet": 100, "person": 200},
+    "val": {"helmet": 30, "no_helmet": 30, "person": 60}
+  },
+  "minimum_negative_scene_groups": {"train": 5, "val": 10},
+  "minimum_lighting_scene_groups": {"normal": 2, "low_light": 2},
+  "notes": [
+    "Source variants and derived background crops stay in their parent's split and do not create independent scene groups.",
+    "Meeting these data-coverage targets does not establish model accuracy, statistical sufficiency or safety in the field.",
+    "Changing targets requires a new versioned policy; model-score-driven relabeling or validation reassignment is not permitted."
+  ]
+}

@@ -1,0 +1,1 @@
+"""PPE inference service."""

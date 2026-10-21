@@ -1,0 +1,276 @@
+{
+  "reviewer": "Codex assistant visual inspection; not independent human adjudication",
+  "diagnosis_sha256": "db263a0d53d551518f54e61332b066e4a2bd715b61cf811a12a210bfcbcf6b7f",
+  "data_manifest_sha256": "041b0c561cf0ace2206e11b9b7389f7294ba68dacd55c6306187c1f40e2c0781",
+  "stage": "1a_data_diagnosis_completed",
+  "ready_for_new_training": false,
+  "gates": {
+    "annotation_consistency": "failed_visual_examples",
+    "target_domain_coverage": "insufficient_in_reviewed_sample",
+    "train_val_scene_independence": "failed_visual_pairs",
+    "fixed_threshold_baseline_reproduced": "passed"
+  },
+  "validation_review": {
+    "images": [
+      "images/val/image1129.jpg",
+      "images/val/image1130.jpg",
+      "images/val/image1137.jpg",
+      "images/val/image1146.jpg",
+      "images/val/image1151.jpg",
+      "images/val/image1183.jpg",
+      "images/val/image1190.jpg",
+      "images/val/image1193.jpg",
+      "images/val/image1203.jpg",
+      "images/val/image1211.jpg",
+      "images/val/image1215.jpg",
+      "images/val/image1217.jpg",
+      "images/val/image1223.jpg",
+      "images/val/image1234.jpg",
+      "images/val/image1248.jpg",
+      "images/val/image1273.jpg",
+      "images/val/image1290.jpg",
+      "images/val/image1301.jpg",
+      "images/val/image1333.jpg",
+      "images/val/image1341.jpg",
+      "images/val/image1342.jpg",
+      "images/val/image1346.jpg",
+      "images/val/image1369.jpg",
+      "images/val/image1377.jpg",
+      "images/val/image1392.jpg",
+      "images/val/image1397.jpg",
+      "images/val/image1402.jpg"
+    ],
+    "count": 27,
+    "observation_tr": "Tüm no_helmet pozitif validation görüntüleri incelendi; görünür şantiye/sanayi PPE çalışma alanı saptanmadı. Baret zorunluluğu yalnız görüntüden çıkarılamaz."
+  },
+  "train_review": {
+    "random_seed": 42,
+    "sample_images": [
+      "images/train/image1329.jpg",
+      "images/train/image1160.jpg",
+      "images/train/image1126.jpg",
+      "images/train/image1366.jpg",
+      "images/train/image1213.jpg",
+      "images/train/image1202.jpg",
+      "images/train/image1197.jpg",
+      "images/train/image1168.jpg",
+      "images/train/image1365.jpg",
+      "images/train/image1158.jpg",
+      "images/train/image1347.jpg",
+      "images/train/image1413.jpg",
+      "images/train/image1304.jpg",
+      "images/train/image1154.jpg",
+      "images/train/image1317.jpg",
+      "images/train/image1265.jpg",
+      "images/train/image1128.jpg",
+      "images/train/image1127.jpg",
+      "images/train/image1155.jpg",
+      "images/train/image1195.jpg",
+      "images/train/image1199.jpg",
+      "images/train/image1289.jpg",
+      "images/train/image1320.jpg",
+      "images/train/image1414.jpg"
+    ],
+    "count": 24,
+    "additional_mixed_helmet_images": [
+      "images/train/image1269.jpg",
+      "images/train/image1289.jpg"
+    ],
+    "observation_tr": "Rastgele 24 örnek gündelik/sportif/resmî/etkinlik bağlamlarından. Bu bir örneklem; 232 pozitif eğitim görüntüsünün tamamı incelenmedi. İki karma helmet/no_helmet görüntüsü ayrıca incelendi; bisiklet/spor kaskları içeriyor."
+  },
+  "annotation_examples": [
+    {
+      "image": "images/train/image1128.jpg",
+      "image_sha256": "7d41a57bac22a375491275746a3115b76634c2bea4231a411c5dee5be8c30bc4",
+      "label_sha256": "faa4fe87266ca266f11aee5bdb4cae007e0205819b5ae8e28eb1846a93be0df2",
+      "kind": "misplaced_box",
+      "observation_tr": "İki no_helmet kutusu baş yerine boyun/göğüs bölgesinde.",
+      "annotations": [
+        {
+          "line": 5,
+          "original": "7 0.123883 0.222398 0.103703 0.076547"
+        },
+        {
+          "line": 6,
+          "original": "7 0.828820 0.300180 0.106172 0.069141"
+        }
+      ],
+      "action": "review_and_relabel_in_new_version; original_unchanged"
+    },
+    {
+      "image": "images/train/image1329.jpg",
+      "image_sha256": "b46b7bc844abe6dc2f166304e2f44aad6649e22132d20e8721a786d852ca127e",
+      "label_sha256": "87b1421541af3f6364b5aba5f8f71b3d7d4e7cb5553d5137060429370742903a",
+      "kind": "inconsistent_extent",
+      "observation_tr": "Kutular başın tamamı yerine alın/saç şeridiyle sınırlı.",
+      "annotations": [
+        {
+          "line": 2,
+          "original": "7 0.760313 0.152375 0.384125 0.123812"
+        },
+        {
+          "line": 7,
+          "original": "7 0.228547 0.299984 0.384125 0.123813"
+        }
+      ],
+      "action": "review_and_relabel_in_new_version; original_unchanged"
+    },
+    {
+      "image": "images/val/image1392.jpg",
+      "image_sha256": "2985fe1c0f6787a82c51c434b19fdba3446494afea963c932eb5088699422a38",
+      "label_sha256": "25fb24858900e1afe97ab28b100d05c33f045a2e9227921691fe56eb796c1831",
+      "kind": "misplaced_box",
+      "observation_tr": "no_helmet kutusu baş yerine boyun/göğüs bölgesinde.",
+      "annotations": [
+        {
+          "line": 8,
+          "original": "7 0.703719 0.258242 0.082313 0.094641"
+        }
+      ],
+      "action": "review_and_relabel_in_new_version; original_unchanged"
+    },
+    {
+      "image": "images/val/image1137.jpg",
+      "image_sha256": "b1d9e4a673e9889ecc8063f1ccf227891eafb4e91389eb94b23a22513c1642b7",
+      "label_sha256": "0c779709ae9c4d0406180567726a7e60cb69e3b7ca453fa9b041167807ef1095",
+      "kind": "inconsistent_extent",
+      "observation_tr": "Kutu alın/göz çevresini kapsıyor; başın üst ve alt kısmı dışarıda.",
+      "annotations": [
+        {
+          "line": 3,
+          "original": "7 0.473258 0.314992 0.298766 0.202484"
+        }
+      ],
+      "action": "review_and_relabel_in_new_version; original_unchanged"
+    },
+    {
+      "image": "images/train/image1269.jpg",
+      "image_sha256": "529251765a3ef304219985ef3d126ac4e3694503081e5a5a7118146c0876a3a0",
+      "label_sha256": "043f9c2fce43a9765ca36a4f1bc6acaa545a5e93da8083a7d6f0623da8642444",
+      "kind": "target_ontology_mismatch",
+      "observation_tr": "helmet etiketi bisiklet kaskında; hedefimiz olan endüstriyel baretle aynı nesne türü değil.",
+      "annotations": [
+        {
+          "line": 3,
+          "original": "0 0.304781 0.382766 0.115656 0.112156"
+        },
+        {
+          "line": 4,
+          "original": "7 0.506312 0.207516 0.154219 0.105156"
+        }
+      ],
+      "action": "review_and_relabel_in_new_version; original_unchanged"
+    },
+    {
+      "image": "images/train/image1289.jpg",
+      "image_sha256": "e2c0642421918d4f95d4ba537add70aad2b6abe8d78d8e3bbbcffbe29d4b0ced",
+      "label_sha256": "cca31ada04ac3ae0952314df14e18f97d98d861690310137fce8b61b27ea20a7",
+      "kind": "target_ontology_mismatch",
+      "observation_tr": "helmet etiketi spor kaskında; endüstriyel baret sınıfıyla eş anlamlı kabul edilemez.",
+      "annotations": [
+        {
+          "line": 6,
+          "original": "0 0.811883 0.518234 0.096828 0.087312"
+        },
+        {
+          "line": 14,
+          "original": "7 0.792742 0.113672 0.086047 0.051000"
+        },
+        {
+          "line": 15,
+          "original": "7 0.306477 0.489656 0.086047 0.051000"
+        },
+        {
+          "line": 16,
+          "original": "7 0.890039 0.787578 0.086047 0.051000"
+        }
+      ],
+      "action": "review_and_relabel_in_new_version; original_unchanged"
+    }
+  ],
+  "confirmed_same_scene_pairs": [
+    {
+      "train": "images/train/image1011.jpg",
+      "val": "images/val/image1010.jpg",
+      "distance": 2,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1050.jpg",
+      "val": "images/val/image1049.jpg",
+      "distance": 2,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1048.jpg",
+      "val": "images/val/image1049.jpg",
+      "distance": 5,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1047.jpg",
+      "val": "images/val/image1049.jpg",
+      "distance": 6,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1073.jpg",
+      "val": "images/val/image1072.jpg",
+      "distance": 6,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1084.jpg",
+      "val": "images/val/image1085.jpg",
+      "distance": 6,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1058.jpg",
+      "val": "images/val/image1057.jpg",
+      "distance": 8,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1086.jpg",
+      "val": "images/val/image1085.jpg",
+      "distance": 8,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image1097.jpg",
+      "val": "images/val/image1096.jpg",
+      "distance": 8,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image47.jpg",
+      "val": "images/val/image31.jpg",
+      "distance": 8,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image7.jpg",
+      "val": "images/val/image12.jpg",
+      "distance": 8,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    },
+    {
+      "train": "images/train/image941.jpg",
+      "val": "images/val/image942.jpg",
+      "distance": 8,
+      "review": "visually_confirmed_same_scene_or_shoot_sequence; not pixel-identical claim"
+    }
+  ],
+  "next_stage": "1b_versioned_data_revision_and_scene_grouping_before_training",
+  "unchanged": [
+    "source images and labels",
+    "active model weights",
+    "historical benchmark results"
+  ],
+  "limitations": [
+    "Contact sheet context review is not complete per-object annotation adjudication.",
+    "12 confirmed pairs are a lower bound, not an exhaustive scene-leakage count.",
+    "Held-out test images/labels were not opened by this diagnostic."
+  ]
+}

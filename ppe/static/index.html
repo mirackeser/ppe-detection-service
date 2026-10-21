@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PPE Monitor</title><link rel="stylesheet" href="/ui/style.css"><script src="/ui/app.js" defer></script></head>
+<body>
+<header><a class="brand" href="/" aria-label="PPE Monitor ana sayfa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span>PPE <b>MONITOR</b></span></a><div class="header-right"><span id="health" class="badge">Servis kontrol ediliyor</span><a href="/docs">API</a></div></header>
+<main>
+<section class="intro"><div><p class="eyebrow">GÖRSEL İŞ GÜVENLİĞİ / DENEYSEL SÜRÜM</p><h1>Görüntüden kanıta.</h1><p>Baret ve yeleği inceleyin; tek kare adaylarını, zaman içinde doğrulanan olaylardan ayırın.</p></div><div class="scope"><strong>İnsan değerlendirmesi gerekir.</strong><span>Model belirsiz veya hatalı sonuç verebilir. Bu prototip, saha güvenliği kararının yerine geçmez.</span></div></section>
+<div class="workspace">
+<section class="panel viewer"><div class="panel-head"><div><p class="eyebrow">İNCELEME ALANI</p><h2>Görüntü ve akış</h2></div><span id="mode-label" class="badge">Bekliyor</span></div>
+<div class="tabs" role="tablist" aria-label="Girdi türü"><button id="image-tab" role="tab" aria-selected="true" aria-controls="image-panel" data-mode="image">Görüntü</button><button id="video-tab" role="tab" aria-selected="false" aria-controls="video-panel" data-mode="video">Video</button><button id="camera-tab" role="tab" aria-selected="false" aria-controls="camera-panel" data-mode="camera">Kamera</button></div>
+<div id="image-panel" role="tabpanel" aria-labelledby="image-tab" class="input-panel"><label for="image-file">JPEG veya PNG seçin <span>En fazla 8 MiB</span></label><div class="input-row"><input id="image-file" type="file" accept="image/jpeg,image/png"><button id="analyze" class="primary">Görüntüyü incele</button></div></div>
+<div id="video-panel" role="tabpanel" aria-labelledby="video-tab" class="input-panel" hidden><label for="video-file">Video dosyası seçin <span>En fazla 64 MiB · ilk 600 kare</span></label><div class="input-row"><input id="video-file" type="file" accept="video/*"><button id="process-video" class="primary">Videoyu işle</button></div><div id="downloads" class="downloads" hidden></div></div>
+<div id="camera-panel" role="tabpanel" aria-labelledby="camera-tab" class="input-panel" hidden><p>Kamera yalnızca başlattığınızda açılır. Kareler bu bilgisayardaki servise gönderilir.</p><div class="input-row"><button id="camera-start" class="primary">Kamerayı başlat</button><button id="camera-stop" disabled>Akışı durdur</button></div></div>
+<p id="feedback" role="status" aria-live="polite">İncelemeye başlamak için bir dosya seçin.</p>
+<div class="stage"><div id="stage-empty"><span class="crosshair" aria-hidden="true"></span><strong>Görüntü bekleniyor</strong><p>Seçtiğiniz görüntü ve tespit kutuları burada görünecek.</p></div><canvas id="canvas" aria-label="Görüntü üzerindeki model tespitleri" hidden></canvas><video id="camera" autoplay muted playsinline hidden></video></div>
+<div class="legend"><span><i class="present"></i>Görülen ekipman</span><span><i class="candidate"></i>Eksiklik adayı</span><span><i class="confirmed"></i>Zamansal olay</span></div>
+</section>
+<aside class="panel results"><div class="panel-head"><div><p class="eyebrow">KARE DEĞERLENDİRMESİ</p><h2>Kişi bazlı kanıt</h2></div><span id="person-count" class="count">—</span></div><div id="assessments" class="assessment-list"><p class="muted">Henüz bir kare incelenmedi.</p></div><div class="note"><strong>“Belirsiz” ne demek?</strong><p>Ekipmanın görünmemesi, bulunmadığını kanıtlamaz. Örtülme, açı ve düşük güven durumlarında karar belirsiz kalır.</p></div></aside>
+</div>
+<section class="panel events"><div class="panel-head"><div><p class="eyebrow">ZAMANSAL KANIT</p><h2>Kaydedilen olaylar</h2></div><button id="refresh-events">Listeyi yenile</button></div><p class="muted">Olay için aynı izde gözlem sayısı ve süre koşulu aranır. Sürekli tekrarlanan model hataları yine olay oluşturabilir.</p><div id="events-list" aria-live="polite"><p class="muted">Olaylar yükleniyor.</p></div></section>
+<footer><span>Yerel görüntü analizi · PPE Monitor 0.2</span><span>Tek kare değerlendirmesi olay kaydı değildir.</span></footer>
+</main></body></html>

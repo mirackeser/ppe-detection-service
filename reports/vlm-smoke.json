@@ -1,0 +1,27 @@
+{
+  "image": "datasets/benchmark/image1083.jpg",
+  "person": {
+    "label": "person",
+    "confidence": 0.7743316888809204,
+    "box": [
+      167.63995361328125,
+      10.82598876953125,
+      508.532470703125,
+      623.3658447265625
+    ]
+  },
+  "yolo_assessment": {
+    "person_index": 3,
+    "helmet": "present",
+    "vest": "present"
+  },
+  "review": {
+    "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "device": "cpu",
+    "prompt": "Describe the safety equipment visible on this person. Is a hard hat visible? Is a high-visibility safety vest visible? If an item is obscured or unclear, say unknown. Do not assume missing equipment.",
+    "text": " Yes, the safety equipment visible on this person includes an orange hard hat, a safety vest, and orange boots.",
+    "latency_ms": 3838.5623329995724,
+    "advisory_only": true
+  },
+  "limitations": "Single cold request; not a warmed benchmark. VLM output is unvalidated free text."
+}

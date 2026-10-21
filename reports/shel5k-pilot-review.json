@@ -1,0 +1,592 @@
+{
+  "inventory_sha256": "b01c7a8c810306fb5671de1d7088852a33b499ccedfee4a59882e23f15452af8",
+  "purpose": "Small reviewed data-pipeline pilot; no final model-performance claims",
+  "reviewer": "Codex assistant visual review; not independent human adjudication",
+  "items": [
+    {
+      "id": "hard_hat_workers1038",
+      "image_sha256": "75ced6b122970c5b1ed0c87b66fa20339dce2c2377d4c095aaca49a37edeae73",
+      "annotation_sha256": "f7f510d7141e5c246c63c9f50cbb7296866912f43fdc57ee739c197e7ff073e3",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1180",
+      "image_sha256": "b4ab6cb8b8ed78609a1bc316bf3be5d1c4a73663f71dad1d91d4c557587f2dca",
+      "annotation_sha256": "ef692b6d406c967366ff92974948e41743da2827b09a6332eb7fb4ecb9ee8a24",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1189",
+      "image_sha256": "6c14b6f41be804b8c7db07c6cee7b33a9fa421ef735c2374e0e7adb680601016",
+      "annotation_sha256": "1e36faf9f07b03ca36b11dfe527cad1adfe55af80aa111b6545cc31b16f708e1",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1217",
+      "image_sha256": "0db2e9eefb09bcc8861c6ce428af120fa8e5d08bcc7c245fd36ae98e435dfd1e",
+      "annotation_sha256": "8a6ab00fe47e578f8d9ef01adab2dcece08d872caf72d9f16f8f1d2d84ccb81a",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1227",
+      "image_sha256": "40ffd4cdf0f056a7fb2b9b5ba35415f2841dc478269fa6a744780d8fd18833cf",
+      "annotation_sha256": "4bc9e0f75f386dc1447ffdfadf3a1f013e823d8b6aaf86f101534d90004c3689",
+      "decision": "accept",
+      "scene_id": "scaffold-single-worker",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "İskeleli yapıda tek çalışan; görünür baretsiz baş ve kişi kutusu incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        120,
+        416,
+        365
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers1317",
+      "image_sha256": "5c2c34d432f22bd5c99e9c7f24924f4399a1db0b780ee51fd11d9ff5e5dfd5a4",
+      "annotation_sha256": "1998241862edd395fdd3fde2e7a496ba2c5ff2a80028d4398a6158a9b680a9f7",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1384",
+      "image_sha256": "01a35040e16006363599f6353dd5796c0d4f9193021768b4ff489ef8252b8a70",
+      "annotation_sha256": "14c8d47a4d39082e57afcc3db25e25c0575e100281cb93608f4472f231076ae4",
+      "decision": "accept",
+      "scene_id": "pole-valley",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "Elektrik direğinde iki çalışan; iki baret ve kişi kutusu incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        0,
+        415,
+        250
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers1602",
+      "image_sha256": "7be24cdd94a828957ec6af92c1bc6e21de522aecd5b1f0da1fa849cc77a05a15",
+      "annotation_sha256": "d64fcef222801b5366273b1e2ec570a77eac2954a369e5f5465e7fd06e6d07cb",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1698",
+      "image_sha256": "c5bc722f5c3ffd85d49c459703384c334100494dab63486e86bae52ecb807f3f",
+      "annotation_sha256": "8ee74b21c57662cf01a2c8b755c4b5d102013a41e0c408c843f495827397b5a4",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1729",
+      "image_sha256": "40532dc82058e4766804ded12a861851a11009d927153edda79688e401e32d46",
+      "annotation_sha256": "1c477d98df538f83640578a380023ec02c3585b34b04b0b2659b85172002283c",
+      "decision": "accept",
+      "scene_id": "tower-visit",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "İnşaat halindeki kule önünde yedi ziyaretçi; baş/kişi kutuları incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        120,
+        416,
+        345
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers1735",
+      "image_sha256": "52c2094f0ed099a41fd32dacdfbbbc07e075f30321d359eb2a4d9ecdf4f866e7",
+      "annotation_sha256": "3eee3b07493054fd3ed676eb0de69e4072d8e22c42d6600ff0c7e29e3fd4a318",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1751",
+      "image_sha256": "8302c2a3bbac5120ab3e547fe1b040774ec828cc4389a3e962dbeb9dd87b62b8",
+      "annotation_sha256": "2e3760420aa0126f139bdb2330acf562ea52708570ccf44b86d2907d0930698b",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1782",
+      "image_sha256": "edfa95c898f228fb7a6c78a2c4821e58f2b7012c1fdda3933dd253ade31cbe7e",
+      "annotation_sha256": "3c75c8ecf336decc1abd4524946914fcaa11c9f566d4b012eb0c8a3ae2e34e47",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers1843",
+      "image_sha256": "69cf1cc23ba8209b837af37616a544b567ea85d0ed6f2ab4718696cbc043b870",
+      "annotation_sha256": "ce720e527d5c811a8d9b19a7a838c82f09602862db02b755c1a5f2d665df8107",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2092",
+      "image_sha256": "2f8e11421eb2a5da43e511688fb487a47bb9374e717da22c677fd9899acc52e9",
+      "annotation_sha256": "7605db9e33151820e915954a27d286e1da1a7437aaa7c72b14a7f8745cc61ec1",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2235",
+      "image_sha256": "bc0472e4b6ee54f3cbbb7aadbf3ccb82a9d22a9dc5f66299c0605025af94bd9d",
+      "annotation_sha256": "36f6dbd5414dbb1bf3666723e2a0f8724b97f443973922d4fa255ad5de4427a0",
+      "decision": "accept",
+      "scene_id": "tower-earthworks",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "Toprak saha ve kuleler önünde sekiz kişi; baş/kişi kutuları incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        170,
+        416,
+        345
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers2272",
+      "image_sha256": "849e5758040046a7417cfbfa53250c2553d1c059f033afc20c493fe38ffefd3d",
+      "annotation_sha256": "39e26c67db68ca46c49f49c6caf2a417588a1da0994fd24eb1b5935586899d6f",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2412",
+      "image_sha256": "28077c78f0f8e50c1c66922f434ca45148aa0b1bee37361abab1a6eac78c7726",
+      "annotation_sha256": "5d8544326d0dd65cffd2d2ce4a762cb338335c8bb9a0348b2f10e1ebe3df178a",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers252",
+      "image_sha256": "862f38e66d16271c0840a0efb106a983120649405ea55b249f8a870b675dd531",
+      "annotation_sha256": "0825c80e02d85143c4812aae1f5aab774bdb36da3d7d65848587f61e71c8b0e9",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2670",
+      "image_sha256": "2d1d8503a22dfba8f176729d05c39349c7d1b03f7db7d44865361a028ee635fa",
+      "annotation_sha256": "c17fc9bf895d19a45eeb64189414918534048be3c17afcaff97a4d8339276743",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2692",
+      "image_sha256": "5173456eaa021c1bbcebd12de0cf2a1b21f640d9437b802ce0fd31ab67b070ec",
+      "annotation_sha256": "d7b1f5ddcf6f66eee4c6e10a522ad4e571ef47c72c204e1bf5406432cefb33a5",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2708",
+      "image_sha256": "8b783a646312460da057e59f5e93528cea9d2eb3dd82746957686b5e491983f1",
+      "annotation_sha256": "b4b7ae09f220a58048a01c19f24b5a17cb430c0e9f93d9b6bfd6a03b1588e0b9",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2725",
+      "image_sha256": "3fda67a87f7bf44ac0d33842426bc5f7e6eb8ef080131130b980428104c1c9d7",
+      "annotation_sha256": "845dd0616f32376f0e2fe831a29ed034bd9fa018cc993e2074788c89b8a796da",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2795",
+      "image_sha256": "1d405f37135803b6260f34547083ead3b3cc85d10fd1b16ea6bc2ffe5ddeef8a",
+      "annotation_sha256": "52ff70a353f882b7acfa0cab0579ef1d81796b74ab8642f6560cdd2c24274701",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2835",
+      "image_sha256": "7db0ee3678a11a73822a877dc828a5802214c98c8b9e9d395182a72cb1d3b7d5",
+      "annotation_sha256": "6d0c27cba6f80c13ce40b7b50dfc07e36085585b78a1a590b62d9a8376e6e47f",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers2888",
+      "image_sha256": "d60c4277a0abf78b88264f5228ad73d6b8de46d56ecfd050f3d008d95e8c7e27",
+      "annotation_sha256": "41d62103ec5ad7373c8f9149a37d51bf5179d1a720daf7740bfe0f1438ee44dc",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers307",
+      "image_sha256": "2c5a109f31a583c9031037d194ee5bd96a1e39bbf10e94aec834b24548c8c403",
+      "annotation_sha256": "01b5f1bd9acc9ce990e311ca9523d5118edf16ba6d4326e9479d26a4c425eb2a",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers3157",
+      "image_sha256": "05858541f7e59db9f6cbcf190911b6843fecc45791bfd73f0e35cc3a688e4442",
+      "annotation_sha256": "68b278c1c92ae3f617c65cdfe699c16f397a43ab52cb8eae483a30cc40fad9d2",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers3196",
+      "image_sha256": "c7bfaf7a0ce81f163fac48d32209adfe98568a477dc159d4e09190ecdcbc8eb4",
+      "annotation_sha256": "5dfb960d199bff7c73d86748c93db9b01a7e0f606352551474a89e22869c9345",
+      "decision": "accept",
+      "scene_id": "scaffold-paved-tour",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "İskele önünde dört kişi; üç baretsiz baş ve bir baret incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        100,
+        416,
+        325
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers3213",
+      "image_sha256": "5234125fe195f58feeca4250cd9924cb66e7569c2ea84558fa8f0d8915fde40f",
+      "annotation_sha256": "aa5be906ad060b2af556b8cc7c0721dc62333a63f15c0bcba4789d1009c43c90",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers3575",
+      "image_sha256": "c4ad6cc03de55e978253f1094f7e2a74f46b5984dbe463f7d2a0f612d8a09553",
+      "annotation_sha256": "bb3cd3b884dbc33f9bbbff3f09441596677903d793a290d462e5e8835587a83a",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers3655",
+      "image_sha256": "c59357d79311cc45126e0add9ed5a7cc382edbcb5419e6424ff511f1e3bb8201",
+      "annotation_sha256": "3999724d158a05f49a784fe030065b1a3414fe830d9b3083d739b62704c30644",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers367",
+      "image_sha256": "10210db8fcde7976575b39881e3396262e1a4fab4cf5bbfce187878b6424e9bf",
+      "annotation_sha256": "f494149b315bde6613bf457bd594b37de3835473f539fc1f2bbbbec2452a0ab1",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers3683",
+      "image_sha256": "965809cc57b554592b32335841dff426d76b1bc7d53d5178afe0b0056d926227",
+      "annotation_sha256": "9ac645ed49cab888e21f1365946d9fce236ac4ff86ceb892c548e0623f973c2a",
+      "decision": "accept",
+      "scene_id": "rebar-slab-tour",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "Donatı sahasında beş kişi; iki baretsiz baş ve üç baret incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        150,
+        416,
+        340
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers3711",
+      "image_sha256": "4d6027510584f3835b845fc4f6f1646aa972c6ca6773b0b1946728f604cdbd46",
+      "annotation_sha256": "9b373fe1597c6ec43386f5c4aa42a07a7cbe01566fd6c028d4bb51f75c71574e",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers382",
+      "image_sha256": "1e7a7b4e6d21631d185df8bc1d7346093a83ef18147b73b2ff5238bfb5b732d1",
+      "annotation_sha256": "6c428470b0eb46cf0d2b7e5f3e0ad84df52e3d266efa031d336eb44693b63de1",
+      "decision": "accept",
+      "scene_id": "scaffold-carpark",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "İskele ve otopark önünde altı kişi; baş ve kişi kutuları incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        150,
+        416,
+        340
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers3983",
+      "image_sha256": "bdf99c491e65d191df2a97e461d43b2a1dad718e26c23d58f21b927187649816",
+      "annotation_sha256": "4b4131699d5465d0dce6795acc0af50da1f3b68587421b830446295dd1825573",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers3984",
+      "image_sha256": "ec560eed071a72b83312a49d811ae272c0565c0c3947f931cf47b7415aaabef3",
+      "annotation_sha256": "8dbfeea2dd667d91c2a07db1ba85bffcd7c0110cb58349b75d7fad613aa68306",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers4028",
+      "image_sha256": "cd216971dc0c4116197b8860ac8888b0c67860f4b3901f56ef6222e1b388ec23",
+      "annotation_sha256": "783975e23a8309a1168c4f55804e947d3724ea1bca3693c01c2ca2c3e151851e",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers4336",
+      "image_sha256": "f3d02a9c58301b05ab6944ba4adfe5c8a7304b0d130463a20baba87720dc551f",
+      "annotation_sha256": "f0ff9c4df383764c49227f77d1261fb185ba73220aa7ca80d710e8d060ea11a1",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers4357",
+      "image_sha256": "2842cf5ab772821af6833f64030bfa0a9fb95d7b6840aa78cb30252d767acd4c",
+      "annotation_sha256": "54c2ee866753e4fa0ec6dc87ae9f9f4088c99f8567765d30116556fe80ec58bd",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers4361",
+      "image_sha256": "2162b4c857abf94f250526b5bb03166f52ce07f72febad315f17be93a0ed44e3",
+      "annotation_sha256": "20055d2fb756918fd38a76fd8f127b912285d7a370a45a14b00ac0899828b38f",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers4506",
+      "image_sha256": "b7d2b5ce303cec26f25ebea269b98b60929e25b47f580c9eb55a2f12cd0ddbde",
+      "annotation_sha256": "51c0e2c7922e12e0e1ae21585ea65d73cacd4ec005d3d5cd315d2fd24fbe24b2",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers4588",
+      "image_sha256": "f0436fbf847f1600a0961113ab5742832f243b66244d892e2b853262d010d94d",
+      "annotation_sha256": "df787353978251801a8672f73fb17be61349cf4f41f1b6aeff5c65eff34b144e",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers4978",
+      "image_sha256": "7a0364b5e9fdd9395f3c7221fdfe4294624745cc98e70664e4e2ab499c1fca46",
+      "annotation_sha256": "6200bce93338d3f4a5df66c50418a39aae8a311749107f061984ca5ba33604d2",
+      "decision": "accept",
+      "scene_id": "fence-plan-reader",
+      "domain": "construction",
+      "labels_reviewed": true,
+      "notes": "Çevrili çalışma sahasında plan inceleyen tek baretli kişi; kutular incelendi. Kabul, baret zorunluluğu kararı değildir.",
+      "corrections": [],
+      "crop": [
+        0,
+        100,
+        416,
+        340
+      ],
+      "crop_reason": "İncelenen sahne bölgesine odaklanmak ve yansıtılmış kenarları dışarıda tutmak; baş/baret kutuları kesilmez."
+    },
+    {
+      "id": "hard_hat_workers555",
+      "image_sha256": "42372f6d2b568352aa59a0972c172684062345ed82d093aff9b6d612c186d701",
+      "annotation_sha256": "ea8d376a7711c68a187bc0f03fad4d122415f96e47bc4cca6536341e80579975",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers871",
+      "image_sha256": "f57f202bdadb4084bf187109cd2be217685ecd055368e4a6a57328d8ca733b2c",
+      "annotation_sha256": "92f8db2022edd9ed1599e94259917283f306b8973ba06665b2d0b5f8f3efbaea",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    },
+    {
+      "id": "hard_hat_workers916",
+      "image_sha256": "85fcff0af7092e80a1a6ba39bbaa85e5ed1b57a0f0f9908e3f974db86466b644",
+      "annotation_sha256": "d0a7c4f8f607642fdb1217141557be7342c94bd94d7fe028d5ac90056db36da1",
+      "decision": "exclude",
+      "scene_id": null,
+      "domain": "unreviewed",
+      "labels_reviewed": false,
+      "notes": "İlk pilot dışında: bağlam, yansıtılmış/kolaj içerik, çok küçük/örtülü nesneler veya eksiksiz nesne incelemesi gereksinimi nedeniyle kabul edilmedi.",
+      "corrections": []
+    }
+  ],
+  "different_scene_pairs": []
+}

@@ -1,0 +1,46 @@
+{
+  "model_sha256": "22215ea200547e70d5d646e4f4a78e0339ee8f058fda85731a86cecbeea5399a",
+  "imgsz": 640,
+  "class": "no_helmet",
+  "split": "val",
+  "iou": 0.5,
+  "scope": "Single-frame object detections, not person-level events or held-out test accuracy",
+  "thresholds": [
+    {
+      "threshold": 0.25,
+      "tp": 15,
+      "fp": 10,
+      "fn": 30,
+      "precision": 0.6,
+      "recall": 0.3333333333333333,
+      "f1": 0.42857142857142855
+    },
+    {
+      "threshold": 0.35,
+      "tp": 2,
+      "fp": 3,
+      "fn": 43,
+      "precision": 0.4,
+      "recall": 0.044444444444444446,
+      "f1": 0.08
+    },
+    {
+      "threshold": 0.5,
+      "tp": 0,
+      "fp": 0,
+      "fn": 45,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "threshold": 0.65,
+      "tp": 0,
+      "fp": 0,
+      "fn": 45,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ]
+}

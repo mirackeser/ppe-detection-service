@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "review_bound_to_diagnosis": true,
+    "source_images_and_labels_unchanged": true,
+    "pt_active_model_unchanged": true,
+    "onnx_active_model_unchanged": true,
+    "baseline_threshold_results_reproduced": true,
+    "reviewed_rows_match_source": true,
+    "all_similarity_candidates_reviewed": true,
+    "new_training_readiness_false": true
+  },
+  "scope": "Data diagnosis artifact integrity; does not mean data quality passed."
+}

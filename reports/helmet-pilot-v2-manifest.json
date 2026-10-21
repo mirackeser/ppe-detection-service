@@ -1,0 +1,1576 @@
+{
+  "version": "helmet-pilot-v2",
+  "scope": "reviewed helmet pilot; not full PPE dataset or final benchmark",
+  "source": {
+    "dataset": "SHEL5K",
+    "release": 4,
+    "doi": "10.17632/9rcv8mm682.4",
+    "source": "https://data.mendeley.com/datasets/9rcv8mm682/4",
+    "download_url": "https://data.mendeley.com/public-api/zip/9rcv8mm682/download/4",
+    "archive_sha256": "dfba1d3ce01af69d791020cdfdfdbc25904b41724d11160361e7a4cd164e7a7a",
+    "archive_bytes": 1315872985,
+    "license_as_published": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Gochoo, Munkhjargal (2022), Safety Helmet detection with Extended Labels 5K images (SHEL5K), Mendeley Data V4, doi:10.17632/9rcv8mm682.4",
+    "paper": "https://doi.org/10.3390/s22062315",
+    "status": "source_import_only; annotation and scene review pending",
+    "scope": "Helmet/head/person annotations; no vest annotations"
+  },
+  "reviewer": "Codex assistant visual review; not independent human adjudication",
+  "inventory_sha256": "b01c7a8c810306fb5671de1d7088852a33b499ccedfee4a59882e23f15452af8",
+  "review_sha256": "1efccc64135c6d65b3d5c8d1c7ebabee00694acf1b40fc57a3e19272f63a2072",
+  "split_policy": "reviewed-group-v3",
+  "split_method": "reviewed-group-v3: SHA256 scene order; seed 20261021, up to 4096 sampled group combinations for >20 groups; minimize per-class and image-ratio deviation from 0.2; no model scores",
+  "mapping": {
+    "helmet": "helmet",
+    "head": "no_helmet",
+    "person_with_helmet": "person",
+    "person_no_helmet": "person",
+    "head_with_helmet": null,
+    "face": null
+  },
+  "target_names": [
+    "helmet",
+    "no_helmet",
+    "person"
+  ],
+  "summary": {
+    "class_instances": {
+      "train": {
+        "no_helmet": 38,
+        "person": 74,
+        "helmet": 37
+      },
+      "val": {
+        "no_helmet": 9,
+        "person": 18,
+        "helmet": 9
+      }
+    },
+    "scene_groups": {
+      "train": [
+        "crane-maintenance",
+        "earthmoving-truck",
+        "earthworks-mixed-team",
+        "foundry-pour",
+        "highrise-perimeter",
+        "rebar-slab-tour",
+        "scaffold-paved-tour",
+        "scaffold-single-worker",
+        "site-entrance-tour",
+        "site-plan-reader",
+        "snow-outdoor-work",
+        "timber-interior-review",
+        "tower-earthworks",
+        "tower-visit",
+        "underground-mine-work",
+        "unfinished-block-tour",
+        "unfinished-brick-room",
+        "utility-work"
+      ],
+      "val": [
+        "brick-interior-helmets",
+        "construction-hoist",
+        "drilling-rig-team",
+        "fence-plan-reader",
+        "scaffold-carpark"
+      ]
+    },
+    "images": {
+      "train": 22,
+      "val": 5
+    },
+    "review_decisions": {
+      "exclude": 93,
+      "accept": 27
+    }
+  },
+  "files": [
+    {
+      "id": "hard_hat_workers1227",
+      "split": "train",
+      "scene_id": "scaffold-single-worker",
+      "image": "images/train/hard_hat_workers1227.png",
+      "label": "labels/train/hard_hat_workers1227.txt",
+      "image_sha256": "f7be77767e4e8b5d32af7077454f39c4228647be971feebe2f7167b2019b80a8",
+      "label_sha256": "cb429aad1f0fbb048a4560dff95336f2d9bae8417f38904c0caf667738fe187a",
+      "source_image_sha256": "40ffd4cdf0f056a7fb2b9b5ba35415f2841dc478269fa6a744780d8fd18833cf",
+      "size": [
+        416,
+        245
+      ],
+      "source_annotation_sha256": "4bc9e0f75f386dc1447ffdfadf3a1f013e823d8b6aaf86f101534d90004c3689",
+      "crop": [
+        0,
+        120,
+        416,
+        365
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1384",
+      "split": "train",
+      "scene_id": "utility-work",
+      "image": "images/train/hard_hat_workers1384.png",
+      "label": "labels/train/hard_hat_workers1384.txt",
+      "image_sha256": "b486063db5690ba1b0fe6fde572d1bf559821bfc001c7fcfc448b39a71fa3170",
+      "label_sha256": "294b494d3600de034acbd18ae4238441e3a13b49b39ab5fbae6dc8387564e636",
+      "source_image_sha256": "01a35040e16006363599f6353dd5796c0d4f9193021768b4ff489ef8252b8a70",
+      "size": [
+        415,
+        250
+      ],
+      "source_annotation_sha256": "14c8d47a4d39082e57afcc3db25e25c0575e100281cb93608f4472f231076ae4",
+      "crop": [
+        0,
+        0,
+        415,
+        250
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1729",
+      "split": "train",
+      "scene_id": "tower-visit",
+      "image": "images/train/hard_hat_workers1729.png",
+      "label": "labels/train/hard_hat_workers1729.txt",
+      "image_sha256": "041857225c23200f15761310a3d7e05e2a088b7e59c9067180697834ddc987b3",
+      "label_sha256": "1ed72f78b375473aa51a4f87e0bd2d461c29f190ff05c8d1b3e88efaf547e29f",
+      "source_image_sha256": "40532dc82058e4766804ded12a861851a11009d927153edda79688e401e32d46",
+      "size": [
+        416,
+        225
+      ],
+      "source_annotation_sha256": "1c477d98df538f83640578a380023ec02c3585b34b04b0b2659b85172002283c",
+      "crop": [
+        0,
+        120,
+        416,
+        345
+      ],
+      "crop_log": [
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            4.0,
+            135.0,
+            73.0,
+            349.0
+          ],
+          "box": [
+            4.0,
+            15.0,
+            73.0,
+            225
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2235",
+      "split": "train",
+      "scene_id": "tower-earthworks",
+      "image": "images/train/hard_hat_workers2235.png",
+      "label": "labels/train/hard_hat_workers2235.txt",
+      "image_sha256": "bb30cbfe6d47a40b555467089c5f9861130f7591096373c3edb0331be81e962d",
+      "label_sha256": "8f039f79c53595cef7631e55fcf087e0a86f199cc666b4550e005d8586f781ad",
+      "source_image_sha256": "bc0472e4b6ee54f3cbbb7aadbf3ccb82a9d22a9dc5f66299c0605025af94bd9d",
+      "size": [
+        416,
+        175
+      ],
+      "source_annotation_sha256": "36f6dbd5414dbb1bf3666723e2a0f8724b97f443973922d4fa255ad5de4427a0",
+      "crop": [
+        0,
+        170,
+        416,
+        345
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers3196",
+      "split": "train",
+      "scene_id": "scaffold-paved-tour",
+      "image": "images/train/hard_hat_workers3196.png",
+      "label": "labels/train/hard_hat_workers3196.txt",
+      "image_sha256": "d7c1b43b8d5ba161f90d9ba513f32a084a3f0d19cc4c0785fd018154f8d82909",
+      "label_sha256": "349e58a2a9ed8eb0fb0a84e238b078360b2a45b8dc9c1a4dd9337c34dc9fd63a",
+      "source_image_sha256": "c7bfaf7a0ce81f163fac48d32209adfe98568a477dc159d4e09190ecdcbc8eb4",
+      "size": [
+        416,
+        225
+      ],
+      "source_annotation_sha256": "5dfb960d199bff7c73d86748c93db9b01a7e0f606352551474a89e22869c9345",
+      "crop": [
+        0,
+        100,
+        416,
+        325
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers3683",
+      "split": "train",
+      "scene_id": "rebar-slab-tour",
+      "image": "images/train/hard_hat_workers3683.png",
+      "label": "labels/train/hard_hat_workers3683.txt",
+      "image_sha256": "921b4e163b91ea8823de3cc61eaecf556d9b27956f8c41adf6bf119bd7651cb6",
+      "label_sha256": "a6701c580c2a302a52b19930710a4e8065a691881d213da4e0dd1fbfecd93e30",
+      "source_image_sha256": "965809cc57b554592b32335841dff426d76b1bc7d53d5178afe0b0056d926227",
+      "size": [
+        416,
+        190
+      ],
+      "source_annotation_sha256": "9ac645ed49cab888e21f1365946d9fce236ac4ff86ceb892c548e0623f973c2a",
+      "crop": [
+        0,
+        150,
+        416,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "clipped_to_crop",
+          "original_box": [
+            35.0,
+            185.0,
+            102.0,
+            344.0
+          ],
+          "box": [
+            35.0,
+            35.0,
+            102.0,
+            190
+          ]
+        },
+        {
+          "source_object": 6,
+          "action": "clipped_to_crop",
+          "original_box": [
+            120.0,
+            185.0,
+            167.0,
+            343.0
+          ],
+          "box": [
+            120.0,
+            35.0,
+            167.0,
+            190
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers382",
+      "split": "val",
+      "scene_id": "scaffold-carpark",
+      "image": "images/val/hard_hat_workers382.png",
+      "label": "labels/val/hard_hat_workers382.txt",
+      "image_sha256": "fcf1c8eb4c224b6a546a74f3305f101ac16f9c6adb69bf7f3e644a87d1ec8ac6",
+      "label_sha256": "ec5be72fd1a656b345b41a31f6ad794e064fccd658b67594953029c421c9ee14",
+      "source_image_sha256": "1e7a7b4e6d21631d185df8bc1d7346093a83ef18147b73b2ff5238bfb5b732d1",
+      "size": [
+        416,
+        190
+      ],
+      "source_annotation_sha256": "6c428470b0eb46cf0d2b7e5f3e0ad84df52e3d266efa031d336eb44693b63de1",
+      "crop": [
+        0,
+        150,
+        416,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            20.0,
+            192.0,
+            121.0,
+            345.0
+          ],
+          "box": [
+            20.0,
+            42.0,
+            121.0,
+            190
+          ]
+        },
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            115.0,
+            184.0,
+            182.0,
+            346.0
+          ],
+          "box": [
+            115.0,
+            34.0,
+            182.0,
+            190
+          ]
+        },
+        {
+          "source_object": 9,
+          "action": "clipped_to_crop",
+          "original_box": [
+            183.0,
+            180.0,
+            227.0,
+            346.0
+          ],
+          "box": [
+            183.0,
+            30.0,
+            227.0,
+            190
+          ]
+        },
+        {
+          "source_object": 10,
+          "action": "clipped_to_crop",
+          "original_box": [
+            162.0,
+            180.0,
+            255.0,
+            346.0
+          ],
+          "box": [
+            162.0,
+            30.0,
+            255.0,
+            190
+          ]
+        },
+        {
+          "source_object": 11,
+          "action": "clipped_to_crop",
+          "original_box": [
+            246.0,
+            165.0,
+            316.0,
+            346.0
+          ],
+          "box": [
+            246.0,
+            15.0,
+            316.0,
+            190
+          ]
+        },
+        {
+          "source_object": 12,
+          "action": "clipped_to_crop",
+          "original_box": [
+            304.0,
+            184.0,
+            361.0,
+            347.0
+          ],
+          "box": [
+            304.0,
+            34.0,
+            361.0,
+            190
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers4978",
+      "split": "val",
+      "scene_id": "fence-plan-reader",
+      "image": "images/val/hard_hat_workers4978.png",
+      "label": "labels/val/hard_hat_workers4978.txt",
+      "image_sha256": "f36a955c2acf2cf5e1061b3c1ae12d830d5e6987194f51317f34f9d7efe43e88",
+      "label_sha256": "75182b4b06671d0fc1f51dd5c7b21bd4b0cde7aa09ebb9d29fa719563f382bbe",
+      "source_image_sha256": "7a0364b5e9fdd9395f3c7221fdfe4294624745cc98e70664e4e2ab499c1fca46",
+      "size": [
+        416,
+        240
+      ],
+      "source_annotation_sha256": "6200bce93338d3f4a5df66c50418a39aae8a311749107f061984ca5ba33604d2",
+      "crop": [
+        0,
+        100,
+        416,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "clipped_to_crop",
+          "original_box": [
+            216.0,
+            157.0,
+            314.0,
+            347.0
+          ],
+          "box": [
+            216.0,
+            57.0,
+            314.0,
+            240
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers4135",
+      "split": "train",
+      "scene_id": "site-plan-reader",
+      "image": "images/train/hard_hat_workers4135.png",
+      "label": "labels/train/hard_hat_workers4135.txt",
+      "image_sha256": "89735102fe18302cfdf79494e909d5bbdf2e24550d41b1c7bdabd1ca39c240c3",
+      "label_sha256": "7c2bd9e2279a7bf579878557f6ed55efa9788d7b4e9bd0e6fea5385481d00099",
+      "source_image_sha256": "20193481348ec54dbbb779ff78a7944224ccb6b96775280a6cb83aceecd13ebb",
+      "size": [
+        200,
+        215
+      ],
+      "source_annotation_sha256": "04d783e4345e8d98204a89418cc86991be7893bfdea391dfc9b8ed38d5cd1ee1",
+      "crop": [
+        130,
+        130,
+        330,
+        345
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "clipped_to_crop",
+          "original_box": [
+            170.0,
+            145.0,
+            295.0,
+            350.0
+          ],
+          "box": [
+            40.0,
+            15.0,
+            165.0,
+            215
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers107",
+      "split": "train",
+      "scene_id": "foundry-pour",
+      "image": "images/train/hard_hat_workers107.png",
+      "label": "labels/train/hard_hat_workers107.txt",
+      "image_sha256": "bb6b4b464b232a3cc41bad947437927a1ef6ab0095f3fc05a5b819a98a4b6565",
+      "label_sha256": "f81ba4d76af089e203f046dbd9a394139995cf0e700aceb01afc7b1835f48a19",
+      "source_image_sha256": "eb0b03c49d0b1beda3c9ce6589a052347cffae0f8c8c2e5f5b267521686755b7",
+      "size": [
+        215,
+        185
+      ],
+      "source_annotation_sha256": "334581da356ae8b3942c2ec8555a1f7d41cf91ec8c05ae4e5d694d87dd79d14a",
+      "crop": [
+        170,
+        150,
+        385,
+        335
+      ],
+      "crop_log": [
+        {
+          "source_object": 5,
+          "action": "clipped_to_crop",
+          "original_box": [
+            210.0,
+            192.0,
+            258.0,
+            337.0
+          ],
+          "box": [
+            40.0,
+            42.0,
+            88.0,
+            185
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers4686",
+      "split": "train",
+      "scene_id": "underground-mine-work",
+      "image": "images/train/hard_hat_workers4686.png",
+      "label": "labels/train/hard_hat_workers4686.txt",
+      "image_sha256": "a197093d8c1410512ff67a203747df7ffffecc8e74b72001532c041b84e497d2",
+      "label_sha256": "a0d3045cf3698256e642e247d6bfa63eed5dfbf7fc1ec8e92d2b19efaaa6b82c",
+      "source_image_sha256": "bf12f07183c157fc348484dabecd623822e2328099b395210be2b78d5ab88258",
+      "size": [
+        400,
+        230
+      ],
+      "source_annotation_sha256": "414133de100d6d4fcd5a4e2761b22fcc2a77c24fcb528c7df02ef8a902c75bfc",
+      "crop": [
+        0,
+        110,
+        400,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "clipped_to_crop",
+          "original_box": [
+            8.0,
+            136.0,
+            245.0,
+            348.0
+          ],
+          "box": [
+            8.0,
+            26.0,
+            245.0,
+            230
+          ]
+        },
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            211.0,
+            132.0,
+            387.0,
+            347.0
+          ],
+          "box": [
+            211.0,
+            22.0,
+            387.0,
+            230
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers3289",
+      "split": "train",
+      "scene_id": "snow-outdoor-work",
+      "image": "images/train/hard_hat_workers3289.png",
+      "label": "labels/train/hard_hat_workers3289.txt",
+      "image_sha256": "0650ab092c7bb8bf595df21a755f20fac8279d842dee06662cb140e6cec06831",
+      "label_sha256": "bf535181b28be659145918a1dac5e74c06c179babd2a1f2b64b94a4d00307408",
+      "source_image_sha256": "aebfdce4009b8b4c19e77047c260a726f781ba123c53caf94b90d9e48d8d8f8c",
+      "size": [
+        190,
+        135
+      ],
+      "source_annotation_sha256": "8e8445954ab82acd7ceface70aee318990a3513850b231732a18eae77da5c352",
+      "crop": [
+        160,
+        175,
+        350,
+        310
+      ],
+      "crop_log": [
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            248.0,
+            208.0,
+            316.0,
+            311.0
+          ],
+          "box": [
+            88.0,
+            33.0,
+            156.0,
+            135
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2265",
+      "split": "train",
+      "scene_id": "unfinished-block-tour",
+      "image": "images/train/hard_hat_workers2265.png",
+      "label": "labels/train/hard_hat_workers2265.txt",
+      "image_sha256": "e694fdcae3ffe5424413a9f2ae8b2d6d37142285a5b2ffc28314752148271c3d",
+      "label_sha256": "adc0bb3461e93a0df57c6e21554b567199b089329602c3daf6c5d43b515e8ed8",
+      "source_image_sha256": "95c4c2a6468c6a8415aa4728948ffa944dfa914368d64d2723b3c9d0c756f1a3",
+      "size": [
+        385,
+        225
+      ],
+      "source_annotation_sha256": "3c6e21b726faeea9d4e270fa7eebf8bf3959a2b7af5b4827beb2d1639e9de692",
+      "crop": [
+        0,
+        130,
+        385,
+        355
+      ],
+      "crop_log": [
+        {
+          "source_object": 9,
+          "action": "clipped_to_crop",
+          "original_box": [
+            275.0,
+            180.0,
+            350.0,
+            360.0
+          ],
+          "box": [
+            275.0,
+            50.0,
+            350.0,
+            225
+          ]
+        },
+        {
+          "source_object": 10,
+          "action": "clipped_to_crop",
+          "original_box": [
+            193.0,
+            177.0,
+            258.0,
+            358.0
+          ],
+          "box": [
+            193.0,
+            47.0,
+            258.0,
+            225
+          ]
+        },
+        {
+          "source_object": 11,
+          "action": "clipped_to_crop",
+          "original_box": [
+            106.0,
+            169.0,
+            169.0,
+            359.0
+          ],
+          "box": [
+            106.0,
+            39.0,
+            169.0,
+            225
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers4362",
+      "split": "train",
+      "scene_id": "underground-mine-work",
+      "image": "images/train/hard_hat_workers4362.png",
+      "label": "labels/train/hard_hat_workers4362.txt",
+      "image_sha256": "427395105b7c3c4b47d9fba3b83b467e61cbc0202c5ac4115266cd48b1bf3238",
+      "label_sha256": "437306fcbd5c064292319eea18708541f2aac1a9914e2efca417d5ada1f4c8dc",
+      "source_image_sha256": "ab7438c62c599ccefc36f7f19e6e274ee84db8fbd30e20fd88e1605e1268cc83",
+      "size": [
+        240,
+        200
+      ],
+      "source_annotation_sha256": "36dc742f0f62547b90823bc6f220be0f25870e62c5cb2e47a4c3fc70fbf3c292",
+      "crop": [
+        60,
+        100,
+        300,
+        300
+      ],
+      "crop_log": [
+        {
+          "source_object": 1,
+          "action": "clipped_to_crop",
+          "original_box": [
+            99.0,
+            139.0,
+            158.0,
+            301.0
+          ],
+          "box": [
+            39.0,
+            39.0,
+            98.0,
+            200
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1362",
+      "split": "val",
+      "scene_id": "brick-interior-helmets",
+      "image": "images/val/hard_hat_workers1362.png",
+      "label": "labels/val/hard_hat_workers1362.txt",
+      "image_sha256": "ffedbe73a6bf5cd60a58a161016d46b0f0fe55862866966acc661558e798862b",
+      "label_sha256": "ec3810568e69c422176a8c7c2b9a6bf208b71ec84789c9dd58275f821783a13a",
+      "source_image_sha256": "26768510e7f118243e7edb9aa5e7672e5be6d4cedb61922101a80c23cc3e0da9",
+      "size": [
+        370,
+        230
+      ],
+      "source_annotation_sha256": "2c8c441fca17a97fcecfd87933c6991729b0a9be989cf36a59a408df01d53fe8",
+      "crop": [
+        0,
+        110,
+        370,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 3,
+          "action": "clipped_to_crop",
+          "original_box": [
+            3.0,
+            130.0,
+            103.0,
+            343.0
+          ],
+          "box": [
+            3.0,
+            20.0,
+            103.0,
+            230
+          ]
+        },
+        {
+          "source_object": 6,
+          "action": "clipped_to_crop",
+          "original_box": [
+            123.0,
+            131.0,
+            206.0,
+            349.0
+          ],
+          "box": [
+            123.0,
+            21.0,
+            206.0,
+            230
+          ]
+        },
+        {
+          "source_object": 9,
+          "action": "clipped_to_crop",
+          "original_box": [
+            186.0,
+            148.0,
+            236.0,
+            347.0
+          ],
+          "box": [
+            186.0,
+            38.0,
+            236.0,
+            230
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2787",
+      "split": "train",
+      "scene_id": "utility-work",
+      "image": "images/train/hard_hat_workers2787.png",
+      "label": "labels/train/hard_hat_workers2787.txt",
+      "image_sha256": "5135c750314b348eeb07ef4b0e4a0cdbb294f049b4c81912eb4a33ac175a32fa",
+      "label_sha256": "ceb1169ddba6ac6c65104d7e1e3673945b7d66ef6a4ca42503d8ec8123d4f1b8",
+      "source_image_sha256": "e2158e690f1dca318bfb2675e5377274a03322508b12607cfbfec2911034bf6b",
+      "size": [
+        250,
+        180
+      ],
+      "source_annotation_sha256": "64cad777172c665609702f049f1cc464a3ff28c8e17b3dcfb3470f5e6c4a6908",
+      "crop": [
+        100,
+        115,
+        350,
+        295
+      ],
+      "crop_log": [
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            132.0,
+            140.0,
+            186.0,
+            297.0
+          ],
+          "box": [
+            32.0,
+            25.0,
+            86.0,
+            180
+          ]
+        },
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            184.0,
+            157.0,
+            331.0,
+            299.0
+          ],
+          "box": [
+            84.0,
+            42.0,
+            231.0,
+            180
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1840",
+      "split": "train",
+      "scene_id": "underground-mine-work",
+      "image": "images/train/hard_hat_workers1840.png",
+      "label": "labels/train/hard_hat_workers1840.txt",
+      "image_sha256": "b8c1d0578225a41f7218e2a12677ffc920c934ffb84c27ad016fc9dd81ae0cb1",
+      "label_sha256": "67d15c8b2c9fb06c382ea9118087492cadf55d150a0688c726b62265476a3a96",
+      "source_image_sha256": "51097635ca5ed7da2a66157052f5e3c2c32dc3af4f419d9becd4b5dafab045db",
+      "size": [
+        290,
+        180
+      ],
+      "source_annotation_sha256": "257804fbb696ba9b1953f93b4408503ae066e809ee6d09a23f02e4e15d86ead3",
+      "crop": [
+        40,
+        140,
+        330,
+        320
+      ],
+      "crop_log": [
+        {
+          "source_object": 3,
+          "action": "clipped_to_crop",
+          "original_box": [
+            157.0,
+            184.0,
+            204.0,
+            321.0
+          ],
+          "box": [
+            117.0,
+            44.0,
+            164.0,
+            180
+          ]
+        },
+        {
+          "source_object": 5,
+          "action": "clipped_to_crop",
+          "original_box": [
+            250.0,
+            188.0,
+            298.0,
+            324.0
+          ],
+          "box": [
+            210.0,
+            48.0,
+            258.0,
+            180
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1902",
+      "split": "train",
+      "scene_id": "utility-work",
+      "image": "images/train/hard_hat_workers1902.png",
+      "label": "labels/train/hard_hat_workers1902.txt",
+      "image_sha256": "973207c46142c4380462b63bf2c50df76bcf6e326883e5733b70b7f1e4a55690",
+      "label_sha256": "dc89cbceb3b72de08f865d32ab8b40a86b6b776856a503ae5aa1023ecd3d26b1",
+      "source_image_sha256": "af913f1be08a7e7386a53859d7fc5756924c31eec8c1ce67903ff00a81e8922b",
+      "size": [
+        416,
+        260
+      ],
+      "source_annotation_sha256": "b4f3899683bb918bd2bbf37957675d6edb9734de0f96428cca78244d06c07ce6",
+      "crop": [
+        0,
+        90,
+        416,
+        350
+      ],
+      "crop_log": [
+        {
+          "source_object": 15,
+          "action": "clipped_to_crop",
+          "original_box": [
+            163.0,
+            195.0,
+            268.0,
+            352.0
+          ],
+          "box": [
+            163.0,
+            105.0,
+            268.0,
+            260
+          ]
+        },
+        {
+          "source_object": 16,
+          "action": "clipped_to_crop",
+          "original_box": [
+            223.0,
+            198.0,
+            299.0,
+            353.0
+          ],
+          "box": [
+            223.0,
+            108.0,
+            299.0,
+            260
+          ]
+        },
+        {
+          "source_object": 17,
+          "action": "clipped_to_crop",
+          "original_box": [
+            269.0,
+            108.0,
+            376.0,
+            355.0
+          ],
+          "box": [
+            269.0,
+            18.0,
+            376.0,
+            260
+          ]
+        },
+        {
+          "source_object": 18,
+          "action": "clipped_to_crop",
+          "original_box": [
+            297.0,
+            62.0,
+            415.0,
+            356.0
+          ],
+          "box": [
+            297.0,
+            0,
+            415.0,
+            260
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1945",
+      "split": "train",
+      "scene_id": "earthworks-mixed-team",
+      "image": "images/train/hard_hat_workers1945.png",
+      "label": "labels/train/hard_hat_workers1945.txt",
+      "image_sha256": "79e211e2972515b85372388d2f84c0fca6363310d3994da1d6eccb90da763cd0",
+      "label_sha256": "80b124c912745d10a8ddcddbd706856bc68f4e89e21782e2152abf9f27031576",
+      "source_image_sha256": "4c7f76f79c50e9aba90108db9fed395001b37641830f60621bdd25bf8dbbd9c9",
+      "size": [
+        320,
+        320
+      ],
+      "source_annotation_sha256": "c6dd6f0d6a90f9af093c4d07bc5f18ace2479bee42da107851eb3c90358c9b9c",
+      "crop": [
+        0,
+        45,
+        320,
+        365
+      ],
+      "crop_log": [
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            135.0,
+            51.0,
+            205.0,
+            370.0
+          ],
+          "box": [
+            135.0,
+            6.0,
+            205.0,
+            320
+          ]
+        },
+        {
+          "source_object": 11,
+          "action": "outside_reviewed_crop"
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2356",
+      "split": "train",
+      "scene_id": "timber-interior-review",
+      "image": "images/train/hard_hat_workers2356.png",
+      "label": "labels/train/hard_hat_workers2356.txt",
+      "image_sha256": "df9a421525ce81b749ab4064f8f2808fa255187904040a787f40eba202b30b78",
+      "label_sha256": "3ec2eda40629efc1316f345678602b067fa48fd08b9d174bf35e2c387e6ed782",
+      "source_image_sha256": "cc284b888921c8e42c6313567aecb7c041e3c196b77b7a1b01afa0408a1e8bcd",
+      "size": [
+        280,
+        250
+      ],
+      "source_annotation_sha256": "771f10ec74fd18257cecf792b547e3040f5b8e9375513a1d219d620ebef44475",
+      "crop": [
+        60,
+        80,
+        340,
+        330
+      ],
+      "crop_log": [
+        {
+          "source_object": 3,
+          "action": "clipped_to_crop",
+          "original_box": [
+            93.0,
+            154.0,
+            178.0,
+            341.0
+          ],
+          "box": [
+            33.0,
+            74.0,
+            118.0,
+            250
+          ]
+        },
+        {
+          "source_object": 4,
+          "action": "outside_reviewed_crop"
+        },
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            168.0,
+            91.0,
+            307.0,
+            342.0
+          ],
+          "box": [
+            108.0,
+            11.0,
+            247.0,
+            250
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers168",
+      "split": "val",
+      "scene_id": "construction-hoist",
+      "image": "images/val/hard_hat_workers168.png",
+      "label": "labels/val/hard_hat_workers168.txt",
+      "image_sha256": "e10d86789782e6c2a490953b9d0217d6ea1380c8d7a8a8c91f8e00aacca19062",
+      "label_sha256": "945a572304871fd849b1685d16602c7346257cf8cc0100a4429f93948d49d2f2",
+      "source_image_sha256": "94e4058109b3ed9cfa16d7ee966082985bb8c1b453641091a529d8609292f792",
+      "size": [
+        395,
+        260
+      ],
+      "source_annotation_sha256": "1990fc9d66844bc616ebbc6135f498eceed77a47ecaa0d7957fc6ba5417f732c",
+      "crop": [
+        20,
+        90,
+        415,
+        350
+      ],
+      "crop_log": [
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            81.0,
+            107.0,
+            264.0,
+            362.0
+          ],
+          "box": [
+            61.0,
+            17.0,
+            244.0,
+            260
+          ]
+        },
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            52.0,
+            152.0,
+            166.0,
+            364.0
+          ],
+          "box": [
+            32.0,
+            62.0,
+            146.0,
+            260
+          ]
+        },
+        {
+          "source_object": 9,
+          "action": "clipped_to_crop",
+          "original_box": [
+            312.0,
+            155.0,
+            407.0,
+            360.0
+          ],
+          "box": [
+            292.0,
+            65.0,
+            387.0,
+            260
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers4115",
+      "split": "val",
+      "scene_id": "drilling-rig-team",
+      "image": "images/val/hard_hat_workers4115.png",
+      "label": "labels/val/hard_hat_workers4115.txt",
+      "image_sha256": "d71993886aeae5c5b6ed4e2dafdeddadfc14f8b488d6ce5ef0bcd124dc3fab92",
+      "label_sha256": "610bae89223d21318bae6c9bb7fe3c7faa6ac0ad641d7f24b5ee8ed4266e8daa",
+      "source_image_sha256": "c63c33e4132304e51a6ab56ba60bcfb3a4a34e52a9d57ec65f921b2d9f82042d",
+      "size": [
+        200,
+        230
+      ],
+      "source_annotation_sha256": "fbcc79138f6f92c450533c94da2ffb920c124c8b9b9142f909a125283444b52d",
+      "crop": [
+        120,
+        120,
+        320,
+        350
+      ],
+      "crop_log": [
+        {
+          "source_object": 6,
+          "action": "clipped_to_crop",
+          "original_box": [
+            123.0,
+            146.0,
+            207.0,
+            364.0
+          ],
+          "box": [
+            3.0,
+            26.0,
+            87.0,
+            230
+          ]
+        },
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            192.0,
+            147.0,
+            293.0,
+            364.0
+          ],
+          "box": [
+            72.0,
+            27.0,
+            173.0,
+            230
+          ]
+        },
+        {
+          "source_object": 8,
+          "action": "outside_reviewed_crop"
+        },
+        {
+          "source_object": 9,
+          "action": "outside_reviewed_crop"
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2638",
+      "split": "train",
+      "scene_id": "crane-maintenance",
+      "image": "images/train/hard_hat_workers2638.png",
+      "label": "labels/train/hard_hat_workers2638.txt",
+      "image_sha256": "1d75461634099e80cc6154500a335f656992d603ee0f52b3f8b952b8bcdbad31",
+      "label_sha256": "43423bf863fe55e603685fd554847ca8bc8cdf28b78b9df383305bb3d35b69c0",
+      "source_image_sha256": "f1862f742f91502675fcfcfee293c4c2fe0bf4ea5a595a4bd4d4e7ca3beb27c2",
+      "size": [
+        360,
+        250
+      ],
+      "source_annotation_sha256": "39768a1ae8c7b10b36455fec1c362ecfc02e4ef4cfa70e3a07ee6b161e61e337",
+      "crop": [
+        40,
+        100,
+        400,
+        350
+      ],
+      "crop_log": [
+        {
+          "source_object": 9,
+          "action": "clipped_to_crop",
+          "original_box": [
+            169.0,
+            138.0,
+            220.0,
+            351.0
+          ],
+          "box": [
+            129.0,
+            38.0,
+            180.0,
+            250
+          ]
+        },
+        {
+          "source_object": 11,
+          "action": "clipped_to_crop",
+          "original_box": [
+            61.0,
+            134.0,
+            121.0,
+            355.0
+          ],
+          "box": [
+            21.0,
+            34.0,
+            81.0,
+            250
+          ]
+        },
+        {
+          "source_object": 12,
+          "action": "clipped_to_crop",
+          "original_box": [
+            83.0,
+            132.0,
+            192.0,
+            359.0
+          ],
+          "box": [
+            43.0,
+            32.0,
+            152.0,
+            250
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2103",
+      "split": "train",
+      "scene_id": "earthmoving-truck",
+      "image": "images/train/hard_hat_workers2103.png",
+      "label": "labels/train/hard_hat_workers2103.txt",
+      "image_sha256": "50dd8bb601ec36019908a637561a54d62bda0e5a8009955427ad2c70a1656b22",
+      "label_sha256": "c279ef5f96a0f9481bf0046745bd91ed54a0d0945ac276e27ef669821fcb93e7",
+      "source_image_sha256": "e4ba84bfe45ce65fb7e5eafb284ed371b0119b373dd8e42b8312bf073021f26e",
+      "size": [
+        210,
+        240
+      ],
+      "source_annotation_sha256": "a6444ad1aab1210e0e409fd7a031feaa741ca4cff1e2344b3440f1a2d968f3e2",
+      "crop": [
+        120,
+        160,
+        330,
+        400
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers576",
+      "split": "train",
+      "scene_id": "unfinished-brick-room",
+      "image": "images/train/hard_hat_workers576.png",
+      "label": "labels/train/hard_hat_workers576.txt",
+      "image_sha256": "247d6eb824cdf6dc379b559b43b983282217e446bb2f0b66fbf62aa27cd256f8",
+      "label_sha256": "a2004bdc69b7717b0baa2db660b1486ca177d36a3128ae75be92caa41ba534cb",
+      "source_image_sha256": "4cf9ff7bcf73fee66e0378d6117c35ca52247daca92502d42e1142782dba662c",
+      "size": [
+        380,
+        220
+      ],
+      "source_annotation_sha256": "840b36d3751fed1ade67b035d658dd60da2f370f7b8694e4393ce370f19deb39",
+      "crop": [
+        30,
+        140,
+        410,
+        360
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "clipped_to_crop",
+          "original_box": [
+            49.0,
+            168.0,
+            145.0,
+            364.0
+          ],
+          "box": [
+            19.0,
+            28.0,
+            115.0,
+            220
+          ]
+        },
+        {
+          "source_object": 5,
+          "action": "clipped_to_crop",
+          "original_box": [
+            139.0,
+            183.0,
+            251.0,
+            365.0
+          ],
+          "box": [
+            109.0,
+            43.0,
+            221.0,
+            220
+          ]
+        },
+        {
+          "source_object": 6,
+          "action": "clipped_to_crop",
+          "original_box": [
+            263.0,
+            168.0,
+            391.0,
+            369.0
+          ],
+          "box": [
+            233.0,
+            28.0,
+            361.0,
+            220
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1099",
+      "split": "train",
+      "scene_id": "site-entrance-tour",
+      "image": "images/train/hard_hat_workers1099.png",
+      "label": "labels/train/hard_hat_workers1099.txt",
+      "image_sha256": "330ed76c1bee467003f6eb8a63a197c789ab9f68f808b855742d0785e19def77",
+      "label_sha256": "a6038f93ebb09a4e46d03467869a469516ac8efc51b6cb5e729742e20e515e21",
+      "source_image_sha256": "0cb46c0ff608471de4c6a88e04fa8e098a22c1a5cfc0b5ae075b30d329aeb700",
+      "size": [
+        350,
+        280
+      ],
+      "source_annotation_sha256": "64b7ad6cba79b879a739072cb1a08c342a19480cef1e520c0edae9c0773d7688",
+      "crop": [
+        50,
+        100,
+        400,
+        380
+      ],
+      "crop_log": [
+        {
+          "source_object": 5,
+          "action": "clipped_to_crop",
+          "original_box": [
+            276.0,
+            120.0,
+            378.0,
+            385.0
+          ],
+          "box": [
+            226.0,
+            20.0,
+            328.0,
+            280
+          ]
+        },
+        {
+          "source_object": 6,
+          "action": "clipped_to_crop",
+          "original_box": [
+            164.0,
+            124.0,
+            338.0,
+            390.0
+          ],
+          "box": [
+            114.0,
+            24.0,
+            288.0,
+            280
+          ]
+        },
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            73.0,
+            133.0,
+            173.0,
+            390.0
+          ],
+          "box": [
+            23.0,
+            33.0,
+            123.0,
+            280
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2718",
+      "split": "train",
+      "scene_id": "highrise-perimeter",
+      "image": "images/train/hard_hat_workers2718.png",
+      "label": "labels/train/hard_hat_workers2718.txt",
+      "image_sha256": "d74e0e419e074a7912723f00baf66b46633d47c4c01386c31c823607e4b916d4",
+      "label_sha256": "7952bd5a6a29ada4a42b51b05c793c4f8d9adad3ceb2cc33685c4a1a668950c4",
+      "source_image_sha256": "6f70951762790deda4acd6e1133cfd94713d8b4423254d1e2b18a0a8ce7c7030",
+      "size": [
+        360,
+        225
+      ],
+      "source_annotation_sha256": "106dd0e1cb82825120a42c567f6e616b48ef8030fb6179fc07a3cd095772e8fa",
+      "crop": [
+        40,
+        110,
+        400,
+        335
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "outside_reviewed_crop"
+        },
+        {
+          "source_object": 5,
+          "action": "outside_reviewed_crop"
+        },
+        {
+          "source_object": 6,
+          "action": "clipped_to_crop",
+          "original_box": [
+            13.0,
+            126.0,
+            87.0,
+            346.0
+          ],
+          "box": [
+            0,
+            16.0,
+            47.0,
+            225
+          ]
+        },
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            83.0,
+            145.0,
+            145.0,
+            341.0
+          ],
+          "box": [
+            43.0,
+            35.0,
+            105.0,
+            225
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    }
+  ],
+  "ready_for_training": false,
+  "remaining_gate": "Run independent release verification before pilot training; no deployment promotion.",
+  "limitations": [
+    "Assistant visual review is not independent human annotation QA.",
+    "Perceptual hashing cannot prove scene independence.",
+    "No vest supervision; never mix into a vest dataset with missing labels.",
+    "No test split; pilot validation cannot serve as final performance evidence."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "promote_candidate": false,
+  "checks": {
+    "no_helmet_AP50_gain_at_least_0.02": false,
+    "overall_mAP50_regression_at_most_0.01": true,
+    "fixed_threshold_recall_not_lower": false,
+    "fixed_threshold_precision_not_lower": false
+  },
+  "baseline_sha256": "22215ea200547e70d5d646e4f4a78e0339ee8f058fda85731a86cecbeea5399a",
+  "candidate_sha256": "337a1f412d0c1be69a0cd8725b1bcc61f5e60b347777d930ce3ac0c74430c754",
+  "baseline_no_helmet": {
+    "Class": "no_helmet",
+    "Images": 27,
+    "Instances": 45,
+    "Box-P": 0.6038,
+    "Box-R": 0.40654,
+    "Box-F1": 0.48591,
+    "mAP50": 0.44139,
+    "mAP75": 0.02952,
+    "mAP50-95": 0.11953
+  },
+  "candidate_no_helmet": {
+    "Class": "no_helmet",
+    "Images": 27,
+    "Instances": 45,
+    "Box-P": 0.56527,
+    "Box-R": 0.31111,
+    "Box-F1": 0.40134,
+    "mAP50": 0.37238,
+    "mAP75": 0.04005,
+    "mAP50-95": 0.10688
+  },
+  "baseline_fixed_threshold": {
+    "threshold": 0.25,
+    "tp": 15,
+    "fp": 10,
+    "fn": 30,
+    "precision": 0.6,
+    "recall": 0.3333333333333333,
+    "f1": 0.42857142857142855
+  },
+  "candidate_fixed_threshold": {
+    "threshold": 0.25,
+    "tp": 13,
+    "fp": 9,
+    "fn": 32,
+    "precision": 0.5909090909090909,
+    "recall": 0.28888888888888886,
+    "f1": 0.3880597014925373
+  },
+  "limitations": "Validation-only model selection on a small sample. No claim of statistical significance or test performance."
+}

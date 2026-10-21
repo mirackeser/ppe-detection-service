@@ -1,0 +1,64 @@
+{
+  "image": "datasets/benchmark/image1083.jpg",
+  "person": {
+    "label": "person",
+    "confidence": 0.7977621555328369,
+    "box": [
+      122.1787109375,
+      4.2381591796875,
+      516.026611328125,
+      625.9664306640625
+    ]
+  },
+  "image_sha256": "d0b25c214e9bb9624df4cb538eb4c66647fa2b8296d3e7205a26aab9741598ae",
+  "crop_pixel_sha256": "c9fcaeb0256abf93c4fee3effc783e0b984e414c1d4db6b44fa5171f96f8ae86",
+  "crop_size": [
+    394,
+    622
+  ],
+  "warmup": 1,
+  "yolo_assessment": {
+    "person_index": 1,
+    "helmet": "present",
+    "vest": "present"
+  },
+  "review": {
+    "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "device": "cpu",
+    "prompt": "Describe the safety equipment visible on this person. Is a hard hat visible? Is a high-visibility safety vest visible? If an item is obscured or unclear, say unknown. Do not assume missing equipment.",
+    "text": " Yes, an orange hard hat is visible.",
+    "latency_ms": 2761.415417000535,
+    "advisory_only": true,
+    "revision": "7e3e67edbbed1bf9888184d9df282b700a323964"
+  },
+  "reviews": [
+    {
+      "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "device": "cpu",
+      "prompt": "Describe the safety equipment visible on this person. Is a hard hat visible? Is a high-visibility safety vest visible? If an item is obscured or unclear, say unknown. Do not assume missing equipment.",
+      "text": " Yes, an orange hard hat is visible.",
+      "latency_ms": 2761.415417000535,
+      "advisory_only": true,
+      "revision": "7e3e67edbbed1bf9888184d9df282b700a323964"
+    },
+    {
+      "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "device": "cpu",
+      "prompt": "Describe the safety equipment visible on this person. Is a hard hat visible? Is a high-visibility safety vest visible? If an item is obscured or unclear, say unknown. Do not assume missing equipment.",
+      "text": " Yes, an orange hard hat is visible.",
+      "latency_ms": 2821.47866699961,
+      "advisory_only": true,
+      "revision": "7e3e67edbbed1bf9888184d9df282b700a323964"
+    },
+    {
+      "model": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "device": "cpu",
+      "prompt": "Describe the safety equipment visible on this person. Is a hard hat visible? Is a high-visibility safety vest visible? If an item is obscured or unclear, say unknown. Do not assume missing equipment.",
+      "text": " Yes, an orange hard hat is visible.",
+      "latency_ms": 2798.2715839989396,
+      "advisory_only": true,
+      "revision": "7e3e67edbbed1bf9888184d9df282b700a323964"
+    }
+  ],
+  "limitations": "Single person crop repeated, not dataset-level accuracy evaluation. VLM output is unvalidated free text. Timing excludes model load and YOLO."
+}

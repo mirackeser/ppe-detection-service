@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "checks": {
+    "release_verifies_after_training": true,
+    "smoke_completed_one_epoch": true,
+    "smoke_bound_to_reviewed_manifest": true,
+    "training_used_separate_working_copy": true,
+    "framework_cache_isolated": true,
+    "active_pt_unchanged": true,
+    "active_onnx_unchanged": true,
+    "review_bound_to_inventory": true,
+    "accepted_source_files_unchanged": true,
+    "colab_package_relocation_passed": true,
+    "package_contains_attribution": true,
+    "incompatible_pilot_rejected_by_ppe_service": true
+  },
+  "release_summary": {
+    "class_instances": {
+      "train": {
+        "no_helmet": 38,
+        "person": 74,
+        "helmet": 37
+      },
+      "val": {
+        "no_helmet": 9,
+        "person": 18,
+        "helmet": 9
+      }
+    },
+    "scene_groups": {
+      "train": [
+        "crane-maintenance",
+        "earthmoving-truck",
+        "earthworks-mixed-team",
+        "foundry-pour",
+        "highrise-perimeter",
+        "rebar-slab-tour",
+        "scaffold-paved-tour",
+        "scaffold-single-worker",
+        "site-entrance-tour",
+        "site-plan-reader",
+        "snow-outdoor-work",
+        "timber-interior-review",
+        "tower-earthworks",
+        "tower-visit",
+        "underground-mine-work",
+        "unfinished-block-tour",
+        "unfinished-brick-room",
+        "utility-work"
+      ],
+      "val": [
+        "brick-interior-helmets",
+        "construction-hoist",
+        "drilling-rig-team",
+        "fence-plan-reader",
+        "scaffold-carpark"
+      ]
+    },
+    "images": {
+      "train": 22,
+      "val": 5
+    },
+    "review_decisions": {
+      "exclude": 93,
+      "accept": 27
+    }
+  },
+  "smoke": {
+    "epochs": 1,
+    "imgsz": 320,
+    "device": "cpu",
+    "weights_sha256": "0095f079f19dcbab7d03fb93bce5309da3a2b84566321da9184d371eec8bf4c4",
+    "run": "runs/train/helmet-pilot-v2-smoke"
+  },
+  "package_sha256": "28fdfa2444b5e18ca22299aec4c86259b0214cbd02e089e44cb549880e559c48",
+  "manifest_sha256": "a3b03f31ae937d4f1e8c53f1fed26a94a60f0094694ff1f9537fe3273c9d0b90",
+  "relocation_errors": [],
+  "scope": "Pipeline integration only; no model improvement, independent human QA, held-out test or deployment accuracy claim"
+}

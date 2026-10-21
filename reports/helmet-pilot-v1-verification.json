@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "pilot_training_ready": true,
+  "deployment_ready": false,
+  "substantive_training_ready": false,
+  "max_verified_epochs": 3,
+  "manifest_sha256": "1bfa168436dbccdd571fcde27b2910a9c4b066e49388a7e40f35f5bb8735a30f",
+  "data_yaml_sha256": "8ca0856270673e1a08f9f8579e2f7adbb3d3611cc059ace6202ec4c0a00d4994",
+  "errors": [],
+  "class_instances": {
+    "train": {
+      "no_helmet": 25,
+      "person": 27,
+      "helmet": 2
+    },
+    "val": {
+      "helmet": 5,
+      "person": 7,
+      "no_helmet": 2
+    }
+  },
+  "scope": "Mechanical and review-provenance checks for a small pilot; not independent human label QA or final model accuracy"
+}

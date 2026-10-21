@@ -1,0 +1,187 @@
+{
+  "policy_id": "data-readiness-v1",
+  "audit_completed": true,
+  "substantive_training_ready": false,
+  "deployment_ready": false,
+  "actual": {
+    "train": {
+      "samples": 35,
+      "positive_scene_groups": 22,
+      "negative_scene_groups": 9,
+      "unique_sources": 26,
+      "class_instances": {
+        "no_helmet": 38,
+        "person": 83,
+        "helmet": 46
+      },
+      "lighting_scene_groups": {
+        "normal": 18,
+        "low_light": 4
+      }
+    },
+    "val": {
+      "samples": 8,
+      "positive_scene_groups": 5,
+      "negative_scene_groups": 2,
+      "unique_sources": 6,
+      "class_instances": {
+        "no_helmet": 9,
+        "person": 20,
+        "helmet": 11
+      },
+      "lighting_scene_groups": {
+        "normal": 3,
+        "low_light": 2
+      }
+    }
+  },
+  "checks": [
+    {
+      "name": "release_integrity",
+      "passed": true
+    },
+    {
+      "name": "train/positive_scene_groups",
+      "actual": 22,
+      "minimum": 40,
+      "passed": false
+    },
+    {
+      "name": "train/negative_scene_groups",
+      "actual": 9,
+      "minimum": 5,
+      "passed": true
+    },
+    {
+      "name": "train/instances/helmet",
+      "actual": 46,
+      "minimum": 100,
+      "passed": false
+    },
+    {
+      "name": "train/instances/no_helmet",
+      "actual": 38,
+      "minimum": 100,
+      "passed": false
+    },
+    {
+      "name": "train/instances/person",
+      "actual": 83,
+      "minimum": 200,
+      "passed": false
+    },
+    {
+      "name": "train/lighting/normal",
+      "actual": 18,
+      "minimum": 2,
+      "passed": true
+    },
+    {
+      "name": "train/lighting/low_light",
+      "actual": 4,
+      "minimum": 2,
+      "passed": true
+    },
+    {
+      "name": "val/positive_scene_groups",
+      "actual": 5,
+      "minimum": 10,
+      "passed": false
+    },
+    {
+      "name": "val/negative_scene_groups",
+      "actual": 2,
+      "minimum": 10,
+      "passed": false
+    },
+    {
+      "name": "val/instances/helmet",
+      "actual": 11,
+      "minimum": 30,
+      "passed": false
+    },
+    {
+      "name": "val/instances/no_helmet",
+      "actual": 9,
+      "minimum": 30,
+      "passed": false
+    },
+    {
+      "name": "val/instances/person",
+      "actual": 20,
+      "minimum": 60,
+      "passed": false
+    },
+    {
+      "name": "val/lighting/normal",
+      "actual": 3,
+      "minimum": 2,
+      "passed": true
+    },
+    {
+      "name": "val/lighting/low_light",
+      "actual": 2,
+      "minimum": 2,
+      "passed": true
+    }
+  ],
+  "unmet_requirements": [
+    {
+      "name": "train/positive_scene_groups",
+      "actual": 22,
+      "minimum": 40,
+      "passed": false
+    },
+    {
+      "name": "train/instances/helmet",
+      "actual": 46,
+      "minimum": 100,
+      "passed": false
+    },
+    {
+      "name": "train/instances/no_helmet",
+      "actual": 38,
+      "minimum": 100,
+      "passed": false
+    },
+    {
+      "name": "train/instances/person",
+      "actual": 83,
+      "minimum": 200,
+      "passed": false
+    },
+    {
+      "name": "val/positive_scene_groups",
+      "actual": 5,
+      "minimum": 10,
+      "passed": false
+    },
+    {
+      "name": "val/negative_scene_groups",
+      "actual": 2,
+      "minimum": 10,
+      "passed": false
+    },
+    {
+      "name": "val/instances/helmet",
+      "actual": 11,
+      "minimum": 30,
+      "passed": false
+    },
+    {
+      "name": "val/instances/no_helmet",
+      "actual": 9,
+      "minimum": 30,
+      "passed": false
+    },
+    {
+      "name": "val/instances/person",
+      "actual": 20,
+      "minimum": 60,
+      "passed": false
+    }
+  ],
+  "scope": "Project working targets for a first controlled portfolio training experiment; not a published standard or deployment certification",
+  "manifest_sha256": "7f596abccdd5ffc5b61b98e06815401a22df94f803dbbb4b4ca53871c720aee4",
+  "policy_sha256": "02f2fa695d3f4ca8446682186f6e8d40a39ae691e7af2801e5102463ed75f76f"
+}

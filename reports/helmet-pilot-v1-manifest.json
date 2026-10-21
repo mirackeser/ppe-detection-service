@@ -1,0 +1,438 @@
+{
+  "version": "helmet-pilot-v1",
+  "scope": "reviewed helmet pilot; not full PPE dataset or final benchmark",
+  "source": {
+    "dataset": "SHEL5K",
+    "release": 4,
+    "doi": "10.17632/9rcv8mm682.4",
+    "source": "https://data.mendeley.com/datasets/9rcv8mm682/4",
+    "download_url": "https://data.mendeley.com/public-api/zip/9rcv8mm682/download/4",
+    "archive_sha256": "dfba1d3ce01af69d791020cdfdfdbc25904b41724d11160361e7a4cd164e7a7a",
+    "archive_bytes": 1315872985,
+    "license_as_published": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Gochoo, Munkhjargal (2022), Safety Helmet detection with Extended Labels 5K images (SHEL5K), Mendeley Data V4, doi:10.17632/9rcv8mm682.4",
+    "paper": "https://doi.org/10.3390/s22062315",
+    "status": "source_import_only; annotation and scene review pending",
+    "scope": "Helmet/head/person annotations; no vest annotations"
+  },
+  "reviewer": "Codex assistant visual review; not independent human adjudication",
+  "inventory_sha256": "b01c7a8c810306fb5671de1d7088852a33b499ccedfee4a59882e23f15452af8",
+  "review_sha256": "229159878ae15f91d38b526b3cd9439073d6e1d59a97e9d0b9be657ab6d6ce10",
+  "split_method": "pilot-group-v2: stable SHA256 scene order, first coverage-valid group combination; max(2,round(groups*0.2)) val groups; no model scores",
+  "mapping": {
+    "helmet": "helmet",
+    "head": "no_helmet",
+    "person_with_helmet": "person",
+    "person_no_helmet": "person",
+    "head_with_helmet": null,
+    "face": null
+  },
+  "target_names": [
+    "helmet",
+    "no_helmet",
+    "person"
+  ],
+  "summary": {
+    "class_instances": {
+      "train": {
+        "no_helmet": 25,
+        "person": 27,
+        "helmet": 2
+      },
+      "val": {
+        "helmet": 5,
+        "person": 7,
+        "no_helmet": 2
+      }
+    },
+    "scene_groups": {
+      "train": [
+        "fence-plan-reader",
+        "scaffold-carpark",
+        "scaffold-paved-tour",
+        "scaffold-single-worker",
+        "tower-earthworks",
+        "tower-visit"
+      ],
+      "val": [
+        "pole-valley",
+        "rebar-slab-tour"
+      ]
+    },
+    "images": {
+      "train": 6,
+      "val": 2
+    },
+    "review_decisions": {
+      "exclude": 40,
+      "accept": 8
+    }
+  },
+  "files": [
+    {
+      "id": "hard_hat_workers1227",
+      "split": "train",
+      "scene_id": "scaffold-single-worker",
+      "image": "images/train/hard_hat_workers1227.png",
+      "label": "labels/train/hard_hat_workers1227.txt",
+      "image_sha256": "f7be77767e4e8b5d32af7077454f39c4228647be971feebe2f7167b2019b80a8",
+      "label_sha256": "cb429aad1f0fbb048a4560dff95336f2d9bae8417f38904c0caf667738fe187a",
+      "source_image_sha256": "40ffd4cdf0f056a7fb2b9b5ba35415f2841dc478269fa6a744780d8fd18833cf",
+      "size": [
+        416,
+        245
+      ],
+      "source_annotation_sha256": "4bc9e0f75f386dc1447ffdfadf3a1f013e823d8b6aaf86f101534d90004c3689",
+      "crop": [
+        0,
+        120,
+        416,
+        365
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1384",
+      "split": "val",
+      "scene_id": "pole-valley",
+      "image": "images/val/hard_hat_workers1384.png",
+      "label": "labels/val/hard_hat_workers1384.txt",
+      "image_sha256": "b486063db5690ba1b0fe6fde572d1bf559821bfc001c7fcfc448b39a71fa3170",
+      "label_sha256": "294b494d3600de034acbd18ae4238441e3a13b49b39ab5fbae6dc8387564e636",
+      "source_image_sha256": "01a35040e16006363599f6353dd5796c0d4f9193021768b4ff489ef8252b8a70",
+      "size": [
+        415,
+        250
+      ],
+      "source_annotation_sha256": "14c8d47a4d39082e57afcc3db25e25c0575e100281cb93608f4472f231076ae4",
+      "crop": [
+        0,
+        0,
+        415,
+        250
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers1729",
+      "split": "train",
+      "scene_id": "tower-visit",
+      "image": "images/train/hard_hat_workers1729.png",
+      "label": "labels/train/hard_hat_workers1729.txt",
+      "image_sha256": "041857225c23200f15761310a3d7e05e2a088b7e59c9067180697834ddc987b3",
+      "label_sha256": "1ed72f78b375473aa51a4f87e0bd2d461c29f190ff05c8d1b3e88efaf547e29f",
+      "source_image_sha256": "40532dc82058e4766804ded12a861851a11009d927153edda79688e401e32d46",
+      "size": [
+        416,
+        225
+      ],
+      "source_annotation_sha256": "1c477d98df538f83640578a380023ec02c3585b34b04b0b2659b85172002283c",
+      "crop": [
+        0,
+        120,
+        416,
+        345
+      ],
+      "crop_log": [
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            4.0,
+            135.0,
+            73.0,
+            349.0
+          ],
+          "box": [
+            4.0,
+            15.0,
+            73.0,
+            225
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers2235",
+      "split": "train",
+      "scene_id": "tower-earthworks",
+      "image": "images/train/hard_hat_workers2235.png",
+      "label": "labels/train/hard_hat_workers2235.txt",
+      "image_sha256": "bb30cbfe6d47a40b555467089c5f9861130f7591096373c3edb0331be81e962d",
+      "label_sha256": "8f039f79c53595cef7631e55fcf087e0a86f199cc666b4550e005d8586f781ad",
+      "source_image_sha256": "bc0472e4b6ee54f3cbbb7aadbf3ccb82a9d22a9dc5f66299c0605025af94bd9d",
+      "size": [
+        416,
+        175
+      ],
+      "source_annotation_sha256": "36f6dbd5414dbb1bf3666723e2a0f8724b97f443973922d4fa255ad5de4427a0",
+      "crop": [
+        0,
+        170,
+        416,
+        345
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers3196",
+      "split": "train",
+      "scene_id": "scaffold-paved-tour",
+      "image": "images/train/hard_hat_workers3196.png",
+      "label": "labels/train/hard_hat_workers3196.txt",
+      "image_sha256": "d7c1b43b8d5ba161f90d9ba513f32a084a3f0d19cc4c0785fd018154f8d82909",
+      "label_sha256": "349e58a2a9ed8eb0fb0a84e238b078360b2a45b8dc9c1a4dd9337c34dc9fd63a",
+      "source_image_sha256": "c7bfaf7a0ce81f163fac48d32209adfe98568a477dc159d4e09190ecdcbc8eb4",
+      "size": [
+        416,
+        225
+      ],
+      "source_annotation_sha256": "5dfb960d199bff7c73d86748c93db9b01a7e0f606352551474a89e22869c9345",
+      "crop": [
+        0,
+        100,
+        416,
+        325
+      ],
+      "crop_log": [],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers3683",
+      "split": "val",
+      "scene_id": "rebar-slab-tour",
+      "image": "images/val/hard_hat_workers3683.png",
+      "label": "labels/val/hard_hat_workers3683.txt",
+      "image_sha256": "921b4e163b91ea8823de3cc61eaecf556d9b27956f8c41adf6bf119bd7651cb6",
+      "label_sha256": "a6701c580c2a302a52b19930710a4e8065a691881d213da4e0dd1fbfecd93e30",
+      "source_image_sha256": "965809cc57b554592b32335841dff426d76b1bc7d53d5178afe0b0056d926227",
+      "size": [
+        416,
+        190
+      ],
+      "source_annotation_sha256": "9ac645ed49cab888e21f1365946d9fce236ac4ff86ceb892c548e0623f973c2a",
+      "crop": [
+        0,
+        150,
+        416,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "clipped_to_crop",
+          "original_box": [
+            35.0,
+            185.0,
+            102.0,
+            344.0
+          ],
+          "box": [
+            35.0,
+            35.0,
+            102.0,
+            190
+          ]
+        },
+        {
+          "source_object": 6,
+          "action": "clipped_to_crop",
+          "original_box": [
+            120.0,
+            185.0,
+            167.0,
+            343.0
+          ],
+          "box": [
+            120.0,
+            35.0,
+            167.0,
+            190
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers382",
+      "split": "train",
+      "scene_id": "scaffold-carpark",
+      "image": "images/train/hard_hat_workers382.png",
+      "label": "labels/train/hard_hat_workers382.txt",
+      "image_sha256": "fcf1c8eb4c224b6a546a74f3305f101ac16f9c6adb69bf7f3e644a87d1ec8ac6",
+      "label_sha256": "ec5be72fd1a656b345b41a31f6ad794e064fccd658b67594953029c421c9ee14",
+      "source_image_sha256": "1e7a7b4e6d21631d185df8bc1d7346093a83ef18147b73b2ff5238bfb5b732d1",
+      "size": [
+        416,
+        190
+      ],
+      "source_annotation_sha256": "6c428470b0eb46cf0d2b7e5f3e0ad84df52e3d266efa031d336eb44693b63de1",
+      "crop": [
+        0,
+        150,
+        416,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 7,
+          "action": "clipped_to_crop",
+          "original_box": [
+            20.0,
+            192.0,
+            121.0,
+            345.0
+          ],
+          "box": [
+            20.0,
+            42.0,
+            121.0,
+            190
+          ]
+        },
+        {
+          "source_object": 8,
+          "action": "clipped_to_crop",
+          "original_box": [
+            115.0,
+            184.0,
+            182.0,
+            346.0
+          ],
+          "box": [
+            115.0,
+            34.0,
+            182.0,
+            190
+          ]
+        },
+        {
+          "source_object": 9,
+          "action": "clipped_to_crop",
+          "original_box": [
+            183.0,
+            180.0,
+            227.0,
+            346.0
+          ],
+          "box": [
+            183.0,
+            30.0,
+            227.0,
+            190
+          ]
+        },
+        {
+          "source_object": 10,
+          "action": "clipped_to_crop",
+          "original_box": [
+            162.0,
+            180.0,
+            255.0,
+            346.0
+          ],
+          "box": [
+            162.0,
+            30.0,
+            255.0,
+            190
+          ]
+        },
+        {
+          "source_object": 11,
+          "action": "clipped_to_crop",
+          "original_box": [
+            246.0,
+            165.0,
+            316.0,
+            346.0
+          ],
+          "box": [
+            246.0,
+            15.0,
+            316.0,
+            190
+          ]
+        },
+        {
+          "source_object": 12,
+          "action": "clipped_to_crop",
+          "original_box": [
+            304.0,
+            184.0,
+            361.0,
+            347.0
+          ],
+          "box": [
+            304.0,
+            34.0,
+            361.0,
+            190
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    },
+    {
+      "id": "hard_hat_workers4978",
+      "split": "train",
+      "scene_id": "fence-plan-reader",
+      "image": "images/train/hard_hat_workers4978.png",
+      "label": "labels/train/hard_hat_workers4978.txt",
+      "image_sha256": "f36a955c2acf2cf5e1061b3c1ae12d830d5e6987194f51317f34f9d7efe43e88",
+      "label_sha256": "75182b4b06671d0fc1f51dd5c7b21bd4b0cde7aa09ebb9d29fa719563f382bbe",
+      "source_image_sha256": "7a0364b5e9fdd9395f3c7221fdfe4294624745cc98e70664e4e2ab499c1fca46",
+      "size": [
+        416,
+        240
+      ],
+      "source_annotation_sha256": "6200bce93338d3f4a5df66c50418a39aae8a311749107f061984ca5ba33604d2",
+      "crop": [
+        0,
+        100,
+        416,
+        340
+      ],
+      "crop_log": [
+        {
+          "source_object": 4,
+          "action": "clipped_to_crop",
+          "original_box": [
+            216.0,
+            157.0,
+            314.0,
+            347.0
+          ],
+          "box": [
+            216.0,
+            57.0,
+            314.0,
+            240
+          ]
+        }
+      ],
+      "corrections": [],
+      "conversion_warnings": []
+    }
+  ],
+  "ready_for_training": false,
+  "remaining_gate": "Run independent release verification before pilot training; no deployment promotion.",
+  "limitations": [
+    "Assistant visual review is not independent human annotation QA.",
+    "Perceptual hashing cannot prove scene independence.",
+    "No vest supervision; never mix into a vest dataset with missing labels.",
+    "No test split; pilot validation cannot serve as final performance evidence."
+  ]
+}

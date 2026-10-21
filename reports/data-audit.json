@@ -1,0 +1,73 @@
+{
+  "splits": {
+    "train": {
+      "images": 1132,
+      "empty_labels": 0,
+      "class_instances": {
+        "0": 1341,
+        "1": 1146,
+        "2": 1269,
+        "3": 1235,
+        "4": 419,
+        "5": 651,
+        "6": 1770,
+        "7": 400,
+        "8": 337,
+        "9": 442,
+        "10": 88
+      },
+      "orphaned_labels": [
+        "labels/train/image941(1).txt",
+        "labels/train/image947(1).txt",
+        "labels/train/image945(1).txt",
+        "labels/train/image949(1).txt",
+        "labels/train/image95(1).txt",
+        "labels/train/image940(1).txt",
+        "labels/train/image950(1).txt",
+        "labels/train/image946(1).txt",
+        "labels/train/image944(1).txt",
+        "labels/train/image948(1).txt"
+      ]
+    },
+    "val": {
+      "images": 143,
+      "empty_labels": 0,
+      "class_instances": {
+        "0": 201,
+        "1": 136,
+        "2": 171,
+        "3": 151,
+        "4": 47,
+        "5": 81,
+        "6": 239,
+        "7": 45,
+        "8": 41,
+        "9": 56,
+        "10": 4
+      },
+      "orphaned_labels": []
+    },
+    "test": {
+      "images": 141,
+      "empty_labels": 0,
+      "class_instances": {
+        "0": 192,
+        "1": 163,
+        "2": 178,
+        "3": 211,
+        "4": 52,
+        "5": 65,
+        "6": 236,
+        "7": 40,
+        "8": 33,
+        "9": 58,
+        "10": 23
+      },
+      "orphaned_labels": []
+    }
+  },
+  "errors": [],
+  "cross_split_pixel_duplicates": [],
+  "passed": true,
+  "limitations": "Exact decoded-pixel duplicates only. Near-duplicate frames and scene identity require separate review."
+}

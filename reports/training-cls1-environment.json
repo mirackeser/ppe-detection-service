@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "torch": "2.14.1",
+  "ultralytics": "8.4.183",
+  "requested_device": "mps",
+  "seed": 42,
+  "deterministic_requested": true,
+  "reproducibility_limit": "Some MPS operations may remain nondeterministic; preserve warning logs."
+}

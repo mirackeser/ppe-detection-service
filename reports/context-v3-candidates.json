@@ -1,0 +1,112 @@
+{
+  "seed": 20261022,
+  "selection": "median grayscale <=65, 1..5 annotated head/helmet objects, no difficult target, previous 120 candidates excluded; visual review required",
+  "pool_count": 279,
+  "candidates": [
+    {
+      "id": "hard_hat_workers3997",
+      "median": 58
+    },
+    {
+      "id": "hard_hat_workers3337",
+      "median": 58
+    },
+    {
+      "id": "hard_hat_workers2459",
+      "median": 38
+    },
+    {
+      "id": "hard_hat_workers134",
+      "median": 44
+    },
+    {
+      "id": "hard_hat_workers2968",
+      "median": 35
+    },
+    {
+      "id": "hard_hat_workers2897",
+      "median": 37
+    },
+    {
+      "id": "hard_hat_workers2922",
+      "median": 44
+    },
+    {
+      "id": "hard_hat_workers1007",
+      "median": 46
+    },
+    {
+      "id": "hard_hat_workers2117",
+      "median": 46
+    },
+    {
+      "id": "hard_hat_workers1419",
+      "median": 31
+    },
+    {
+      "id": "hard_hat_workers2649",
+      "median": 39
+    },
+    {
+      "id": "hard_hat_workers2631",
+      "median": 53
+    },
+    {
+      "id": "hard_hat_workers3550",
+      "median": 47
+    },
+    {
+      "id": "hard_hat_workers187",
+      "median": 31
+    },
+    {
+      "id": "hard_hat_workers2251",
+      "median": 31
+    },
+    {
+      "id": "hard_hat_workers637",
+      "median": 62
+    },
+    {
+      "id": "hard_hat_workers1992",
+      "median": 65
+    },
+    {
+      "id": "hard_hat_workers2797",
+      "median": 64
+    },
+    {
+      "id": "hard_hat_workers4642",
+      "median": 24
+    },
+    {
+      "id": "hard_hat_workers1011",
+      "median": 35
+    },
+    {
+      "id": "hard_hat_workers1966",
+      "median": 4
+    },
+    {
+      "id": "hard_hat_workers4131",
+      "median": 47
+    },
+    {
+      "id": "hard_hat_workers2205",
+      "median": 53
+    },
+    {
+      "id": "hard_hat_workers3933",
+      "median": 20
+    }
+  ],
+  "inventory_sha256": "b01c7a8c810306fb5671de1d7088852a33b499ccedfee4a59882e23f15452af8",
+  "previous_review_sha256": "1efccc64135c6d65b3d5c8d1c7ebabee00694acf1b40fc57a3e19272f63a2072",
+  "accepted_new_sources": [
+    "hard_hat_workers2459",
+    "hard_hat_workers1419",
+    "hard_hat_workers2631",
+    "hard_hat_workers187",
+    "hard_hat_workers1011"
+  ]
+}

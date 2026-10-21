@@ -1,0 +1,13 @@
+{
+  "health_status": 200,
+  "model": "best.onnx",
+  "runtime": "onnxruntime",
+  "image_detections": 9,
+  "video_processed_frames": 10,
+  "artifact_downloads": "passed",
+  "websocket_responses": 5,
+  "metrics_status": 200,
+  "scope": "Localhost transport integration with selected input files, not a physical camera/RTSP test",
+  "video_source": "runs/demo-input.mp4",
+  "image_source": "datasets/benchmark/image1083.jpg"
+}

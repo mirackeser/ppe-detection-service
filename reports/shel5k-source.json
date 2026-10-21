@@ -1,0 +1,15 @@
+{
+  "dataset": "SHEL5K",
+  "release": 4,
+  "doi": "10.17632/9rcv8mm682.4",
+  "source": "https://data.mendeley.com/datasets/9rcv8mm682/4",
+  "download_url": "https://data.mendeley.com/public-api/zip/9rcv8mm682/download/4",
+  "archive_sha256": "dfba1d3ce01af69d791020cdfdfdbc25904b41724d11160361e7a4cd164e7a7a",
+  "archive_bytes": 1315872985,
+  "license_as_published": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Gochoo, Munkhjargal (2022), Safety Helmet detection with Extended Labels 5K images (SHEL5K), Mendeley Data V4, doi:10.17632/9rcv8mm682.4",
+  "paper": "https://doi.org/10.3390/s22062315",
+  "status": "source_import_only; annotation and scene review pending",
+  "scope": "Helmet/head/person annotations; no vest annotations"
+}

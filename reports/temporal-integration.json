@@ -1,0 +1,11 @@
+{
+  "input": "datasets/construction-ppe/images/val/image1146.jpg",
+  "synthetic_repeated_still": true,
+  "scope": "Real detector + local video/WebSocket + temporal state + SQLite persistence; not camera or event accuracy",
+  "video_source_id": "b1cc02c0abc14553a21cd3ab530f3db4",
+  "stream_source_id": "c22163d01dc64a57bd5bd49d45f8b8c8",
+  "video_events": 1,
+  "stream_events": 1,
+  "event_deduplication": "passed",
+  "persistence": "passed"
+}

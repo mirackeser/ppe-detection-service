@@ -1,0 +1,14 @@
+{
+  "substantive_differences": {
+    "cls": {
+      "baseline": 0.5,
+      "candidate": 1.0
+    }
+  },
+  "expected_single_variable": "cls",
+  "ignored_metadata": [
+    "name",
+    "save_dir",
+    "project"
+  ]
+}
